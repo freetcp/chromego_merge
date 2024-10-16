@@ -31,7 +31,7 @@ def process_clash(data, index):
 def get_physical_location(address):
     address = re.sub(':.*', '', address)  # 用正则表达式去除端口部分
 
-    return f"Ang_Local"
+    return f"meta"
 
 # 处理sb，待办
 def process_sb(data, index):
