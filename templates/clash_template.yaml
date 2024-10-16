@@ -12,6 +12,7 @@ dns:
   fake-ip-range: 198.18.0.1/16
   default-nameserver: 
     - 223.5.5.5
+    - 180.76.76.76
     - 8.8.8.8
   nameserver:
     - https://dns.alidns.com/dns-query
@@ -38,7 +39,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-
 
 rules:
   - DOMAIN,clash.razord.top,DIRECT
