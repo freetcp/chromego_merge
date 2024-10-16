@@ -12,6 +12,7 @@ dns:
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
   - 223.5.5.5
+  - 180.76.76.76
   - 8.8.8.8
   nameserver:
   - https://dns.alidns.com/dns-query
@@ -26,16 +27,18 @@ dns:
     - 240.0.0.0/4
 proxies:
 - name: WARP
-  type: wireguard
-  server: 162.159.192.1
-  port: 2408
-  ip: 172.16.0.2
-  ipv6: 2606:4700:110:87ad:b400:91:eadb:887f
-  private-key: wIC19yRRSJkhVJcE09Qo9bE3P3PIwS3yyqyUnjwNO34=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  udp: true
-  ip-version: ipv6-prefer
-  reserved: XiBe
+  type: vless
+  server: cloudflare.182682.xyz
+  port: 2087
+  uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  tls: true
+  network: ws
+  servername: ws.freews.eu.org
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ws.freews.eu.org
   remote-dns-resolve: true
   dns:
   - 1.1.1.1
