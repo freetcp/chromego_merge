@@ -26,7 +26,7 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: Ang_Local_hysteria_01
+- name: meta_hysteria_01
   type: hysteria
   server: 46.29.166.206
   port: 100
@@ -38,14 +38,14 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
 - cipher: aes-128-gcm
-  name: Ang_Local_ss_11
+  name: meta_ss_11
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: Ang_Local_ssr_12
+  name: meta_ssr_12
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
@@ -56,7 +56,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: Ang_Local_vmess_13
+  name: meta_vmess_13
   network: ws
   port: 443
   server: 15.235.50.172
@@ -74,7 +74,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: Ang_Local_vmess_14
+  name: meta_vmess_14
   network: ws
   port: 2095
   server: 172.64.175.213
@@ -90,7 +90,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: Ang_Local_vmess_15
+  name: meta_vmess_15
   network: ws
   port: 2095
   server: 172.64.175.88
@@ -102,7 +102,7 @@ proxies:
     headers:
       Host: ip9.6016725.xyz
     path: /github.com/Alvin9999
-- name: Ang_Local_trojan_16
+- name: meta_trojan_16
   password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
   port: 443
   server: hknode07.oportal.cc
@@ -110,21 +110,21 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: Ang_Local_ss_17
+  name: meta_ss_17
   password: 29774f68-6f8c-492d-9ada-5cfd4313d218
   port: 11001
   server: 183.240.255.75
   tfo: false
   type: ss
 - cipher: aes-256-gcm
-  name: Ang_Local_ss_18
+  name: meta_ss_18
   password: 8c052d7a-d5da-495a-abee-93f4bef380e1
   port: 54937
   server: jioawdm.zhangwei.li
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: Ang_Local_ss_19
+  name: meta_ss_19
   password: b6979cfa-bab9-4303-b10c-cd350fbea326
   port: 27263
   server: gtm1.ktmwan.com
@@ -132,7 +132,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Ang_Local_vmess_110
+  name: meta_vmess_110
   port: 2902
   server: 143.92.42.65
   skip-cert-verify: false
@@ -142,7 +142,7 @@ proxies:
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
 - alterId: 0
   cipher: auto
-  name: Ang_Local_vmess_111
+  name: meta_vmess_111
   port: 12960
   server: z3.fragranceninja.com
   skip-cert-verify: false
@@ -151,13 +151,13 @@ proxies:
   type: vmess
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
 - cipher: aes-256-cfb
-  name: Ang_Local_ss_112
+  name: meta_ss_112
   password: hGkQ6915tD
   port: 16088
   server: 120.232.81.50
   tfo: false
   type: ss
-- name: Ang_Local_trojan_113
+- name: meta_trojan_113
   network: tcp
   password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
   port: 443
@@ -166,70 +166,70 @@ proxies:
   sni: twnode11.oportal.cc
   type: trojan
 - cipher: aes-256-gcm
-  name: Ang_Local_ss_114
+  name: meta_ss_114
   password: 8c052d7a-d5da-495a-abee-93f4bef380e1
   port: 27251
   server: jioawdm.zhangwei.li
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: Ang_Local_ss_115
+  name: meta_ss_115
   password: hGkQ6915tD
   port: 15084
   server: 120.232.81.50
   tfo: false
   type: ss
 - cipher: aes-256-gcm
-  name: Ang_Local_ss_116
+  name: meta_ss_116
   password: 8c052d7a-d5da-495a-abee-93f4bef380e1
   port: 50331
   server: biedazjyd.zhangwei.li
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: Ang_Local_ss_117
+  name: meta_ss_117
   password: 4b3391e1-3cc6-4e82-816c-6b7bf516c12b
   port: 49207
   server: hzhz1.sssyun.xyz
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: Ang_Local_ss_118
+  name: meta_ss_118
   password: 5e169d24-64c5-4a31-8942-1e7b05e79db5
   port: 11002
   server: 61.172.235.22
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: Ang_Local_ss_119
+  name: meta_ss_119
   password: 4b3391e1-3cc6-4e82-816c-6b7bf516c12b
   port: 39204
   server: hzhz1.sssyun.xyz
   tfo: false
   type: ss
 - cipher: aes-256-gcm
-  name: Ang_Local_ss_120
+  name: meta_ss_120
   password: 8c052d7a-d5da-495a-abee-93f4bef380e1
   port: 35423
   server: mmt.bjcu.donghui.tech
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: Ang_Local_ss_121
+  name: meta_ss_121
   password: amazonskr05
   port: 443
   server: 18.182.55.134
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: Ang_Local_ss_122
+  name: meta_ss_122
   password: amazonskr05
   port: 443
   server: 13.112.168.104
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: Ang_Local_ss_123
+  name: meta_ss_123
   password: amazonskr05
   port: 443
   server: 13.115.189.201
@@ -237,7 +237,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: Ang_Local_vmess_124
+  name: meta_vmess_124
   port: 43526
   server: 120.232.153.71
   skip-cert-verify: false
@@ -247,7 +247,7 @@ proxies:
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 - alterId: 0
   cipher: auto
-  name: Ang_Local_vmess_125
+  name: meta_vmess_125
   port: 2098
   server: f41.maryam1500.top
   skip-cert-verify: false
@@ -256,7 +256,7 @@ proxies:
   type: vmess
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
 - cipher: aes-256-cfb
-  name: Ang_Local_ss_126
+  name: meta_ss_126
   password: hGkQ6915tD
   port: 15083
   server: 120.232.81.50
@@ -264,7 +264,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Ang_Local_vmess_127
+  name: meta_vmess_127
   network: tcp
   port: '2902'
   server: 143.92.42.65
@@ -274,7 +274,7 @@ proxies:
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
 - alterId: 0
   cipher: auto
-  name: Ang_Local_vmess_128
+  name: meta_vmess_128
   network: tcp
   port: '12960'
   server: z3.fragranceninja.com
@@ -284,7 +284,7 @@ proxies:
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
 - alterId: 64
   cipher: auto
-  name: Ang_Local_vmess_129
+  name: meta_vmess_129
   network: tcp
   port: '43526'
   server: 120.232.153.71
@@ -294,7 +294,7 @@ proxies:
   uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 - alterId: 0
   cipher: auto
-  name: Ang_Local_vmess_130
+  name: meta_vmess_130
   network: tcp
   port: '2098'
   server: f41.maryam1500.top
@@ -302,14 +302,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
-- name: Ang_Local_trojan_131
+- name: meta_trojan_131
   password: wwTIozXY
   port: 27131
   server: 36.151.192.201
   skip-cert-verify: true
   type: trojan
   udp: false
-- name: Ang_Local_trojan_132
+- name: meta_trojan_132
   network: ws
   password: auto
   port: 443
@@ -324,7 +324,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Ang_Local_vmess_133
+  name: meta_vmess_133
   network: tcp
   port: '443'
   server: 42.236.73.72
@@ -334,7 +334,7 @@ proxies:
   uuid: 044f0177-0675-4dcf-89d4-804b6788e518
 - alpn:
   - http/1.1
-  name: Ang_Local_trojan_134
+  name: meta_trojan_134
   network: tcp
   password: fuck
   port: 443
@@ -344,7 +344,7 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- name: Ang_Local_shadowtls_0
+- name: meta_shadowtls_0
   type: ss
   server: 91.149.239.23
   port: 34567
@@ -356,7 +356,7 @@ proxies:
     host: nijigen-works.jp
     password: YEudERP9ZstwNZpOWytH3Ds4sSEgj8GVZk7OQEGDEpo=
     version: 3
-- name: Ang_Local_hy_0
+- name: meta_hy_0
   type: hysteria
   server: 46.17.43.223
   port: 12311
@@ -370,7 +370,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Ang_Local_hy2_0
+- name: meta_hy2_0
   type: hysteria2
   server: 185.22.152.93
   port: 33713
@@ -383,88 +383,88 @@ proxy-groups:
   type: select
   proxies:
   - 自动选择
-  - Ang_Local_hysteria_01
-  - Ang_Local_ss_11
-  - Ang_Local_ssr_12
-  - Ang_Local_vmess_13
-  - Ang_Local_vmess_14
-  - Ang_Local_vmess_15
-  - Ang_Local_trojan_16
-  - Ang_Local_ss_17
-  - Ang_Local_ss_18
-  - Ang_Local_ss_19
-  - Ang_Local_vmess_110
-  - Ang_Local_vmess_111
-  - Ang_Local_ss_112
-  - Ang_Local_trojan_113
-  - Ang_Local_ss_114
-  - Ang_Local_ss_115
-  - Ang_Local_ss_116
-  - Ang_Local_ss_117
-  - Ang_Local_ss_118
-  - Ang_Local_ss_119
-  - Ang_Local_ss_120
-  - Ang_Local_ss_121
-  - Ang_Local_ss_122
-  - Ang_Local_ss_123
-  - Ang_Local_vmess_124
-  - Ang_Local_vmess_125
-  - Ang_Local_ss_126
-  - Ang_Local_vmess_127
-  - Ang_Local_vmess_128
-  - Ang_Local_vmess_129
-  - Ang_Local_vmess_130
-  - Ang_Local_trojan_131
-  - Ang_Local_trojan_132
-  - Ang_Local_vmess_133
-  - Ang_Local_trojan_134
-  - Ang_Local_shadowtls_0
-  - Ang_Local_hy_0
-  - Ang_Local_hy2_0
+  - meta_hysteria_01
+  - meta_ss_11
+  - meta_ssr_12
+  - meta_vmess_13
+  - meta_vmess_14
+  - meta_vmess_15
+  - meta_trojan_16
+  - meta_ss_17
+  - meta_ss_18
+  - meta_ss_19
+  - meta_vmess_110
+  - meta_vmess_111
+  - meta_ss_112
+  - meta_trojan_113
+  - meta_ss_114
+  - meta_ss_115
+  - meta_ss_116
+  - meta_ss_117
+  - meta_ss_118
+  - meta_ss_119
+  - meta_ss_120
+  - meta_ss_121
+  - meta_ss_122
+  - meta_ss_123
+  - meta_vmess_124
+  - meta_vmess_125
+  - meta_ss_126
+  - meta_vmess_127
+  - meta_vmess_128
+  - meta_vmess_129
+  - meta_vmess_130
+  - meta_trojan_131
+  - meta_trojan_132
+  - meta_vmess_133
+  - meta_trojan_134
+  - meta_shadowtls_0
+  - meta_hy_0
+  - meta_hy2_0
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - Ang_Local_hysteria_01
-  - Ang_Local_ss_11
-  - Ang_Local_ssr_12
-  - Ang_Local_vmess_13
-  - Ang_Local_vmess_14
-  - Ang_Local_vmess_15
-  - Ang_Local_trojan_16
-  - Ang_Local_ss_17
-  - Ang_Local_ss_18
-  - Ang_Local_ss_19
-  - Ang_Local_vmess_110
-  - Ang_Local_vmess_111
-  - Ang_Local_ss_112
-  - Ang_Local_trojan_113
-  - Ang_Local_ss_114
-  - Ang_Local_ss_115
-  - Ang_Local_ss_116
-  - Ang_Local_ss_117
-  - Ang_Local_ss_118
-  - Ang_Local_ss_119
-  - Ang_Local_ss_120
-  - Ang_Local_ss_121
-  - Ang_Local_ss_122
-  - Ang_Local_ss_123
-  - Ang_Local_vmess_124
-  - Ang_Local_vmess_125
-  - Ang_Local_ss_126
-  - Ang_Local_vmess_127
-  - Ang_Local_vmess_128
-  - Ang_Local_vmess_129
-  - Ang_Local_vmess_130
-  - Ang_Local_trojan_131
-  - Ang_Local_trojan_132
-  - Ang_Local_vmess_133
-  - Ang_Local_trojan_134
-  - Ang_Local_shadowtls_0
-  - Ang_Local_hy_0
-  - Ang_Local_hy2_0
+  - meta_hysteria_01
+  - meta_ss_11
+  - meta_ssr_12
+  - meta_vmess_13
+  - meta_vmess_14
+  - meta_vmess_15
+  - meta_trojan_16
+  - meta_ss_17
+  - meta_ss_18
+  - meta_ss_19
+  - meta_vmess_110
+  - meta_vmess_111
+  - meta_ss_112
+  - meta_trojan_113
+  - meta_ss_114
+  - meta_ss_115
+  - meta_ss_116
+  - meta_ss_117
+  - meta_ss_118
+  - meta_ss_119
+  - meta_ss_120
+  - meta_ss_121
+  - meta_ss_122
+  - meta_ss_123
+  - meta_vmess_124
+  - meta_vmess_125
+  - meta_ss_126
+  - meta_vmess_127
+  - meta_vmess_128
+  - meta_vmess_129
+  - meta_vmess_130
+  - meta_trojan_131
+  - meta_trojan_132
+  - meta_vmess_133
+  - meta_trojan_134
+  - meta_shadowtls_0
+  - meta_hy_0
+  - meta_hy2_0
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
