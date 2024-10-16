@@ -36,17 +36,17 @@ def get_physical_location(address):
 # 处理sb，待办
 def process_sb(data, index):
     try:
-        json_data = json.loads(data)
+        meta = json.loads(data)
         # 处理 shadowtls 数据
 
         # 提取所需字段
-        method = json_data["outbounds"][0]["method"]
-        password = json_data["outbounds"][0]["password"]
-        server = json_data["outbounds"][1]["server"]
-        server_port = json_data["outbounds"][1]["server_port"]
-        server_name = json_data["outbounds"][1]["tls"]["server_name"]
-        shadowtls_password = json_data["outbounds"][1]["password"]
-        version = json_data["outbounds"][1]["version"]
+        method = meta["outbounds"][0]["method"]
+        password = meta["outbounds"][0]["password"]
+        server = meta["outbounds"][1]["server"]
+        server_port = meta["outbounds"][1]["server_port"]
+        server_name = meta["outbounds"][1]["tls"]["server_name"]
+        shadowtls_password = meta["outbounds"][1]["password"]
+        version = meta["outbounds"][1]["version"]
         location = get_physical_location(server)
         name = f"{location}_shadowtls_{index}"
         # 创建当前网址的proxy字典
@@ -74,11 +74,11 @@ def process_sb(data, index):
 
 def process_hysteria(data, index):
     try:
-        json_data = json.loads(data)
+        meta = json.loads(data)
         # 处理 hysteria 数据
         # 提取所需字段
-        auth = json_data["auth_str"]
-        server_ports = json_data["server"]
+        auth = meta["auth_str"]
+        server_ports = meta["server"]
         server_ports_slt = server_ports.split(":")
         server = server_ports_slt[0]
         ports = server_ports_slt[1]
@@ -88,12 +88,12 @@ def process_hysteria(data, index):
             mport = ports_slt[1]
         else:
             mport = server_port
-        #fast_open = json_data["fast_open"]
+        #fast_open = meta["fast_open"]
         fast_open = True
-        insecure = json_data["insecure"]
-        server_name = json_data["server_name"]
-        alpn = json_data["alpn"]
-        protocol = json_data["protocol"]
+        insecure = meta["insecure"]
+        server_name = meta["server_name"]
+        alpn = meta["alpn"]
+        protocol = meta["protocol"]
         location = get_physical_location(server)
         name = f"{location}_hy_{index}"
 
@@ -122,20 +122,20 @@ def process_hysteria(data, index):
 # 处理hysteria2
 def process_hysteria2(data, index):
     try:
-        json_data = json.loads(data)
+        meta = json.loads(data)
         # 处理 hysteria2 数据
         # 提取所需字段
-        auth = json_data["auth"]
-        server_ports = json_data["server"]
+        auth = meta["auth"]
+        server_ports = meta["server"]
         server_ports_slt = server_ports.split(":")
         server = server_ports_slt[0]
         ports = server_ports_slt[1]
         ports_slt = ports.split(",")
         server_port = int(ports_slt[0])
-        #fast_open = json_data["fastOpen"]
+        #fast_open = meta["fastOpen"]
         fast_open = True
-        insecure = json_data["tls"]["insecure"]
-        sni = json_data["tls"]["sni"]
+        insecure = meta["tls"]["insecure"]
+        sni = meta["tls"]["sni"]
         location = get_physical_location(server)
         name = f"{location}_hy2_{index}"
 
@@ -160,23 +160,23 @@ def process_hysteria2(data, index):
 #处理xray
 def process_xray(data, index):
     try:
-        json_data = json.loads(data)
+        meta = json.loads(data)
         # 处理 xray 数据
-        protocol = json_data["outbounds"][0]["protocol"]
+        protocol = meta["outbounds"][0]["protocol"]
         #vless操作
         if protocol == "vless":
         # 提取所需字段
-            server = json_data["outbounds"][0]["settings"]["vnext"][0]["address"]
-            port = json_data["outbounds"][0]["settings"]["vnext"][0]["port"]
-            uuid = json_data["outbounds"][0]["settings"]["vnext"][0]["users"][0]["id"]
+            server = meta["outbounds"][0]["settings"]["vnext"][0]["address"]
+            port = meta["outbounds"][0]["settings"]["vnext"][0]["port"]
+            uuid = meta["outbounds"][0]["settings"]["vnext"][0]["users"][0]["id"]
             istls = True
-            flow = json_data["outbounds"][0]["settings"]["vnext"][0]["users"][0]["flow"]
+            flow = meta["outbounds"][0]["settings"]["vnext"][0]["users"][0]["flow"]
             # 传输方式
-            network = json_data["outbounds"][0]["streamSettings"]["network"]
-            publicKey = json_data["outbounds"][0]["streamSettings"]["realitySettings"]["publicKey"]
-            shortId = json_data["outbounds"][0]["streamSettings"]["realitySettings"]["shortId"]
-            serverName = json_data["outbounds"][0]["streamSettings"]["realitySettings"]["serverName"]
-            fingerprint = json_data["outbounds"][0]["streamSettings"]["realitySettings"]["fingerprint"]
+            network = meta["outbounds"][0]["streamSettings"]["network"]
+            publicKey = meta["outbounds"][0]["streamSettings"]["realitySettings"]["publicKey"]
+            shortId = meta["outbounds"][0]["streamSettings"]["realitySettings"]["shortId"]
+            serverName = meta["outbounds"][0]["streamSettings"]["realitySettings"]["serverName"]
+            fingerprint = meta["outbounds"][0]["streamSettings"]["realitySettings"]["fingerprint"]
             # udp转发
             isudp = True
             location = get_physical_location(server)
@@ -203,7 +203,7 @@ def process_xray(data, index):
                 
             # 根据network判断grpc
             elif network == "grpc":
-                serviceName = json_data["outbounds"][0]["streamSettings"]["grpcSettings"]["serviceName"]
+                serviceName = meta["outbounds"][0]["streamSettings"]["grpcSettings"]["serviceName"]
                 
                 # 创建当前网址的proxy字典
                 proxy = {
