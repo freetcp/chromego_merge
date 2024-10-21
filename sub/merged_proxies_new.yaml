@@ -101,6 +101,24 @@ proxies:
     public-key: bzpKT_Fgsm2k0oAe5SXJmbQN8OxK4AA4NR42yqM-hnI
     short-id: ''
   client-fingerprint: chrome
+- name: meta_trojan_21
+  server: chgo-fr2c.88888801.xyz
+  port: 443
+  type: trojan
+  password: 50d8d65d-9d7d-3830-864a-dad899e9c4a8
+  udp: true
+  network: ws
+  ws-opts:
+    path: /2024dc09-chrome-gooo-b9cf-836523956698
+- name: meta_trojan_22
+  server: chgo-kr1c.88888801.xyz
+  port: 443
+  type: trojan
+  password: 50d8d65d-9d7d-3830-864a-dad899e9c4a8
+  udp: true
+  network: ws
+  ws-opts:
+    path: /2024dc09-chrome-gooo-b9cf-836523956698
 - name: meta_shadowtls_0
   type: ss
   server: 91.149.239.23
@@ -133,6 +151,8 @@ proxy-groups:
   - meta_trojan_05
   - meta_trojan_06
   - meta_vless_11
+  - meta_trojan_21
+  - meta_trojan_22
   - meta_shadowtls_0
   - meta_hy2_0
 - name: 自动选择
@@ -148,6 +168,8 @@ proxy-groups:
   - meta_trojan_05
   - meta_trojan_06
   - meta_vless_11
+  - meta_trojan_21
+  - meta_trojan_22
   - meta_shadowtls_0
   - meta_hy2_0
 rules:
