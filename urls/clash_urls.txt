@@ -1,5 +1,2 @@
 https://raw.githubusercontent.com/freetcp/chromego_convert/refs/heads/main/urls/trojan.yaml
 https://raw.githubusercontent.com/Alvin9999/pac2/master/quick/config.yaml
-https://www.githubip.xyz/jsvpn/jsproxy/dev/yule/20200325/1299699.md
-https://raw.githubusercontent.com/Alvin9999/pac2/master/singbox/config.json
-https://raw.githubusercontent.com/Alvin9999/pac2/master/singbox/1/config.json
