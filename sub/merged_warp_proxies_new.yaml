@@ -119,18 +119,6 @@ proxies:
     public-key: bzpKT_Fgsm2k0oAe5SXJmbQN8OxK4AA4NR42yqM-hnI
     short-id: ''
   client-fingerprint: chrome
-- name: meta_shadowtls_1
-  type: ss
-  server: 91.149.239.23
-  port: 34567
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ASXmhqODZasnV777P2m33eQ9mCU5KXY86dXJQTuWFW8=
-  plugin: shadow-tls
-  client-fingerprint: chrome
-  plugin-opts:
-    host: nijigen-works.jp
-    password: YEudERP9ZstwNZpOWytH3Ds4sSEgj8GVZk7OQEGDEpo=
-    version: 3
 - name: meta_hy2_0
   type: hysteria2
   server: 185.22.152.93
@@ -164,7 +152,6 @@ proxy-groups:
   - meta_trojan_05
   - meta_trojan_06
   - meta_vless_11
-  - meta_shadowtls_1
   - meta_hy2_0
 - name: 负载均衡
   type: load-balance
@@ -176,7 +163,6 @@ proxy-groups:
   - meta_trojan_05
   - meta_trojan_06
   - meta_vless_11
-  - meta_shadowtls_1
   - meta_hy2_0
   url: http://www.gstatic.com/generate_204
   interval: 300
