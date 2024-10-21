@@ -73,8 +73,8 @@ proxy-groups:
     #lazy: true
     #disable-udp: true
     strategy: round-robin #作为前置节点⽤这个⽐较好
-
-      
+    proxies:
+    
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
