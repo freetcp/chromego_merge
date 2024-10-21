@@ -101,7 +101,7 @@ proxies:
     public-key: bzpKT_Fgsm2k0oAe5SXJmbQN8OxK4AA4NR42yqM-hnI
     short-id: ''
   client-fingerprint: chrome
-- name: meta_shadowtls_1
+- name: meta_shadowtls_0
   type: ss
   server: 91.149.239.23
   port: 34567
@@ -133,7 +133,7 @@ proxy-groups:
   - meta_trojan_05
   - meta_trojan_06
   - meta_vless_11
-  - meta_shadowtls_1
+  - meta_shadowtls_0
   - meta_hy2_0
 - name: 自动选择
   type: url-test
@@ -148,7 +148,7 @@ proxy-groups:
   - meta_trojan_05
   - meta_trojan_06
   - meta_vless_11
-  - meta_shadowtls_1
+  - meta_shadowtls_0
   - meta_hy2_0
 rules:
 - DOMAIN,clash.razord.top,DIRECT
