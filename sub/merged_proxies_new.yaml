@@ -87,20 +87,18 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-- name: meta_vless_11
-  type: vless
-  server: 46.29.166.206
-  port: 49887
-  uuid: ef6706c2-ac66-4c39-bf16-208effa86922
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.paypal.com
-  reality-opts:
-    public-key: bBX2IBet-d-kWJ7sb_49zVaem3iTAw5jIwQL4JGDuEg
-    short-id: ''
-  client-fingerprint: chrome
+- name: meta_hysteria_11
+  type: hysteria
+  server: 195.154.184.5
+  port: 22787
+  ports: 30000-40000
+  auth_str: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: meta_trojan_21
   server: chgo-fr2c.88888801.xyz
   port: 443
@@ -119,22 +117,10 @@ proxies:
   network: ws
   ws-opts:
     path: /2024dc09-chrome-gooo-b9cf-836523956698
-- name: meta_shadowtls_0
-  type: ss
-  server: 91.149.239.23
-  port: 34567
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ASXmhqODZasnV777P2m33eQ9mCU5KXY86dXJQTuWFW8=
-  plugin: shadow-tls
-  client-fingerprint: chrome
-  plugin-opts:
-    host: nijigen-works.jp
-    password: YEudERP9ZstwNZpOWytH3Ds4sSEgj8GVZk7OQEGDEpo=
-    version: 3
 - name: meta_hy2_0
   type: hysteria2
-  server: 185.22.152.93
-  port: 47382
+  server: 46.17.41.189
+  port: 50717
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -150,10 +136,9 @@ proxy-groups:
   - meta_trojan_04
   - meta_trojan_05
   - meta_trojan_06
-  - meta_vless_11
+  - meta_hysteria_11
   - meta_trojan_21
   - meta_trojan_22
-  - meta_shadowtls_0
   - meta_hy2_0
 - name: 自动选择
   type: url-test
@@ -167,10 +152,9 @@ proxy-groups:
   - meta_trojan_04
   - meta_trojan_05
   - meta_trojan_06
-  - meta_vless_11
+  - meta_hysteria_11
   - meta_trojan_21
   - meta_trojan_22
-  - meta_shadowtls_0
   - meta_hy2_0
 rules:
 - DOMAIN,clash.razord.top,DIRECT
