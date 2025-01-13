@@ -28,26 +28,6 @@ dns:
 proxies:
 - name: meta_trojan_01
   port: 443
-  server: 202408-ru1a.88888806.xyz
-  type: trojan
-  network: ws
-  udp: true
-  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-  skip-cert-verify: true
-  ws-opts:
-    path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-- name: meta_trojan_02
-  port: 443
-  server: 202408-ru2a.88888806.xyz
-  type: trojan
-  network: ws
-  udp: true
-  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-  skip-cert-verify: true
-  ws-opts:
-    path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-- name: meta_trojan_03
-  port: 443
   server: de1a-xded888.88888806.xyz
   type: trojan
   network: ws
@@ -57,7 +37,7 @@ proxies:
   ws-opts:
     path: /92024db4-eadf-4cd1-b7e5-87d047d353f0
   client-fingerprint: edge
-- name: meta_trojan_04
+- name: meta_trojan_02
   port: 443
   server: fr1a.88888806.xyz
   type: trojan
@@ -67,7 +47,17 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-- name: meta_trojan_05
+- name: meta_trojan_03
+  port: 443
+  server: fr2a.88888806.xyz
+  type: trojan
+  network: ws
+  udp: true
+  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
+  skip-cert-verify: true
+  ws-opts:
+    path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
+- name: meta_trojan_04
   port: 443
   server: 2024-us2a.88888806.xyz
   type: trojan
@@ -77,9 +67,19 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-- name: meta_trojan_06
+- name: meta_trojan_05
   port: 443
   server: 2024-us3a.88888806.xyz
+  type: trojan
+  network: ws
+  udp: true
+  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
+  skip-cert-verify: true
+  ws-opts:
+    path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
+- name: meta_trojan_06
+  port: 443
+  server: 2024-us4a.88888806.xyz
   type: trojan
   network: ws
   udp: true
