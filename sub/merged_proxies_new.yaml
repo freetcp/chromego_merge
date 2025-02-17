@@ -90,8 +90,8 @@ proxies:
 - name: meta_hysteria_11
   type: hysteria
   server: 185.22.155.71
-  port: 15424
-  ports: 30000-40000
+  port: 63717
+  ports: 40000-50000
   auth_str: dongtaiwang.com
   obfs: dongtaiwang.com
   alpn:
@@ -121,7 +121,7 @@ proxies:
 - name: meta_hy2_0
   type: hysteria2
   server: 46.17.41.189
-  port: 50717
+  port: 51224
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
