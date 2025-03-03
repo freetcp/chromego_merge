@@ -100,24 +100,6 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: meta_trojan_21
-  server: chgo-fr2c.88888801.xyz
-  port: 443
-  type: trojan
-  password: 50d8d65d-9d7d-3830-864a-dad899e9c4a8
-  udp: true
-  network: ws
-  ws-opts:
-    path: /2024dc09-chrome-gooo-b9cf-836523956698
-- name: meta_trojan_22
-  server: chgo-kr1c.88888801.xyz
-  port: 443
-  type: trojan
-  password: 50d8d65d-9d7d-3830-864a-dad899e9c4a8
-  udp: true
-  network: ws
-  ws-opts:
-    path: /2024dc09-chrome-gooo-b9cf-836523956698
 - name: meta_hy2_0
   type: hysteria2
   server: 46.17.41.189
@@ -138,8 +120,6 @@ proxy-groups:
   - meta_trojan_05
   - meta_trojan_06
   - meta_hysteria_11
-  - meta_trojan_21
-  - meta_trojan_22
   - meta_hy2_0
 - name: 自动选择
   type: url-test
@@ -154,8 +134,6 @@ proxy-groups:
   - meta_trojan_05
   - meta_trojan_06
   - meta_hysteria_11
-  - meta_trojan_21
-  - meta_trojan_22
   - meta_hy2_0
 rules:
 - DOMAIN,clash.razord.top,DIRECT
