@@ -101,7 +101,7 @@ proxies:
 - name: meta_hy2_0
   type: hysteria2
   server: 46.17.41.217
-  port: 37481
+  port: 4395
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
