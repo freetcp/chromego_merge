@@ -1,4 +1,4 @@
-name: Merge Script
+name: chromego_merge
 
 on:
   # push:
