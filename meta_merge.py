@@ -46,7 +46,7 @@ def get_physical_location(address):
             "GeoLite2-City.mmdb"
         )  # 这里的路径需要指向你自己的数据库文件
         response = reader.city(ip_address)
-        country_short = rec.country_short
+        country_short = rec.country.short
         # city = response.city.name
         return f"{country_short}"
     except geoip2.errors.AddressNotFoundError as e:
