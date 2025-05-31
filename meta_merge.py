@@ -313,10 +313,6 @@ process_urls('./urls/xray_urls.txt', process_xray)
 with open('./templates/clash_template.yaml', 'r', encoding='utf-8') as file:
     config_data = yaml.safe_load(file)
 
-# 读取warp配置文件内容
-with open('./templates/clash_warp_template.yaml', 'r', encoding='utf-8') as file:
-    config_warp_data = yaml.safe_load(file)
-
 # 添加合并后的代理到proxies部分
 if 'proxies' not in config_data or not config_data['proxies']:
     config_data['proxies'] = merged_proxies
