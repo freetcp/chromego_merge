@@ -47,9 +47,8 @@ def get_physical_location(address):
         )  # 这里的路径需要指向你自己的数据库文件
         response = reader.city(ip_address)
         country = response.country.name
-        city = response.city.name
+        # city = response.city.name
         return f"{country}"
-        # return f"油管绵阿羊_{country}"
     except geoip2.errors.AddressNotFoundError as e:
         print(f"Error: {e}")
         return "Unknown"
