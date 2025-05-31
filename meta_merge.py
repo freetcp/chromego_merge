@@ -33,8 +33,6 @@ def process_clash(data, index):
         proxy["name"] = f"{location}_{proxy['type']}_{index}{i+1}"
     merged_proxies.extend(proxies)
 
-
-'''
 def get_physical_location(address):
     address = re.sub(':.*', '', address)  # 用正则表达式去除端口部分
     try:
@@ -55,8 +53,6 @@ def get_physical_location(address):
     except geoip2.errors.AddressNotFoundError as e:
         print(f"Error: {e}")
         return "Unknown"
-'''
-
 
 # 处理sb，待办
 def process_sb(data, index):
