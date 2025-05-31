@@ -25,21 +25,21 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: United States_Los Angeles_mieru_01
+- name: United States_mieru_01
   type: mieru
   server: 108.181.23.41
   port: 28676
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: Russia_None_mieru_11
+- name: Russia_mieru_11
   type: mieru
   server: 185.22.155.105
   port: 25622
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: United States_Los Angeles_hysteria_21
+- name: United States_hysteria_21
   type: hysteria
   server: 208.87.243.151
   port: 17549
@@ -50,7 +50,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: Russia_None_hysteria_31
+- name: Russia_hysteria_31
   type: hysteria
   server: 185.22.155.71
   port: 10803
@@ -61,7 +61,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: The Netherlands_Amsterdam_tuic_41
+- name: The Netherlands_tuic_41
   server: 62.210.10.113
   port: 22457
   type: tuic
@@ -74,7 +74,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Vietnam_None_hysteria_51
+- name: Vietnam_hysteria_51
   type: hysteria
   server: 123.30.149.21
   port: 29597
@@ -86,7 +86,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: United States_None_hysteria_61
+- name: United States_hysteria_61
   type: hysteria
   server: 198.40.52.27
   port: 36194
@@ -98,7 +98,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: United States_None_hysteria_71
+- name: United States_hysteria_71
   type: hysteria
   server: 198.40.52.27
   port: 36194
@@ -110,7 +110,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: The Netherlands_Amsterdam_hysteria_81
+- name: The Netherlands_hysteria_81
   type: hysteria
   server: 62.210.10.113
   port: 22662
@@ -122,7 +122,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: United States_Los Angeles_tuic_91
+- name: United States_tuic_91
   server: 108.181.5.131
   port: 34008
   type: tuic
@@ -135,7 +135,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: France_Paris_hysteria_101
+- name: France_hysteria_101
   type: hysteria
   server: 195.154.200.178
   port: 46938
@@ -147,7 +147,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: United States_Los Angeles_hysteria_111
+- name: United States_hysteria_111
   type: hysteria
   server: 108.181.24.77
   port: 11512
@@ -159,21 +159,21 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Hong Kong_Tsuen Wan_mieru_121
+- name: Hong Kong_mieru_121
   type: mieru
   server: 175.29.23.45
   port: 28855
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: United States_Seattle_mieru_122
+- name: United States_mieru_122
   type: mieru
   server: 45.150.165.84
   port: 8067
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: Russia_None_hy_0
+- name: Russia_hy_0
   type: hysteria
   server: 185.22.155.71
   port: 10803
@@ -187,7 +187,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Russia_None_hy_1
+- name: Russia_hy_1
   type: hysteria
   server: 185.22.155.71
   port: 10803
@@ -201,7 +201,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: France_Paris_hy_4
+- name: France_hy_4
   type: hysteria
   server: 195.154.200.40
   port: 15010
@@ -215,7 +215,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_None_hy_5
+- name: United States_hy_5
   type: hysteria
   server: 198.40.52.27
   port: 36194
@@ -229,7 +229,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: France_Paris_hy_6
+- name: France_hy_6
   type: hysteria
   server: 51.159.226.1
   port: 14241
@@ -243,7 +243,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_Los Angeles_hy_7
+- name: United States_hy_7
   type: hysteria
   server: 208.87.243.187
   port: 40528
@@ -257,7 +257,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Russia_Moscow_hy2_0
+- name: Russia_hy2_0
   type: hysteria2
   server: 45.129.2.108
   port: 30033
@@ -265,7 +265,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: Russia_Moscow_hy2_1
+- name: Russia_hy2_1
   type: hysteria2
   server: 46.29.163.171
   port: 30033
@@ -273,7 +273,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: France_Paris_hy2_2
+- name: France_hy2_2
   type: hysteria2
   server: 51.159.111.32
   port: 31180
@@ -281,7 +281,7 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: France_Paris_hy2_3
+- name: France_hy2_3
   type: hysteria2
   server: hy2-2.694463.xyz
   port: 4489
@@ -289,7 +289,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: United States_Los Angeles_hy2_4
+- name: United States_hy2_4
   type: hysteria2
   server: 108.181.5.130
   port: 57773
@@ -297,7 +297,7 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: Russia_Moscow_hy2_5
+- name: Russia_hy2_5
   type: hysteria2
   server: 46.17.41.5
   port: 12904
@@ -311,64 +311,64 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - United States_Los Angeles_mieru_01
-  - Russia_None_mieru_11
-  - United States_Los Angeles_hysteria_21
-  - Russia_None_hysteria_31
-  - The Netherlands_Amsterdam_tuic_41
-  - Vietnam_None_hysteria_51
-  - United States_None_hysteria_61
-  - United States_None_hysteria_71
-  - The Netherlands_Amsterdam_hysteria_81
-  - United States_Los Angeles_tuic_91
-  - France_Paris_hysteria_101
-  - United States_Los Angeles_hysteria_111
-  - Hong Kong_Tsuen Wan_mieru_121
-  - United States_Seattle_mieru_122
-  - Russia_None_hy_0
-  - Russia_None_hy_1
-  - France_Paris_hy_4
-  - United States_None_hy_5
-  - France_Paris_hy_6
-  - United States_Los Angeles_hy_7
-  - Russia_Moscow_hy2_0
-  - Russia_Moscow_hy2_1
-  - France_Paris_hy2_2
-  - France_Paris_hy2_3
-  - United States_Los Angeles_hy2_4
-  - Russia_Moscow_hy2_5
+  - United States_mieru_01
+  - Russia_mieru_11
+  - United States_hysteria_21
+  - Russia_hysteria_31
+  - The Netherlands_tuic_41
+  - Vietnam_hysteria_51
+  - United States_hysteria_61
+  - United States_hysteria_71
+  - The Netherlands_hysteria_81
+  - United States_tuic_91
+  - France_hysteria_101
+  - United States_hysteria_111
+  - Hong Kong_mieru_121
+  - United States_mieru_122
+  - Russia_hy_0
+  - Russia_hy_1
+  - France_hy_4
+  - United States_hy_5
+  - France_hy_6
+  - United States_hy_7
+  - Russia_hy2_0
+  - Russia_hy2_1
+  - France_hy2_2
+  - France_hy2_3
+  - United States_hy2_4
+  - Russia_hy2_5
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - United States_Los Angeles_mieru_01
-  - Russia_None_mieru_11
-  - United States_Los Angeles_hysteria_21
-  - Russia_None_hysteria_31
-  - The Netherlands_Amsterdam_tuic_41
-  - Vietnam_None_hysteria_51
-  - United States_None_hysteria_61
-  - United States_None_hysteria_71
-  - The Netherlands_Amsterdam_hysteria_81
-  - United States_Los Angeles_tuic_91
-  - France_Paris_hysteria_101
-  - United States_Los Angeles_hysteria_111
-  - Hong Kong_Tsuen Wan_mieru_121
-  - United States_Seattle_mieru_122
-  - Russia_None_hy_0
-  - Russia_None_hy_1
-  - France_Paris_hy_4
-  - United States_None_hy_5
-  - France_Paris_hy_6
-  - United States_Los Angeles_hy_7
-  - Russia_Moscow_hy2_0
-  - Russia_Moscow_hy2_1
-  - France_Paris_hy2_2
-  - France_Paris_hy2_3
-  - United States_Los Angeles_hy2_4
-  - Russia_Moscow_hy2_5
+  - United States_mieru_01
+  - Russia_mieru_11
+  - United States_hysteria_21
+  - Russia_hysteria_31
+  - The Netherlands_tuic_41
+  - Vietnam_hysteria_51
+  - United States_hysteria_61
+  - United States_hysteria_71
+  - The Netherlands_hysteria_81
+  - United States_tuic_91
+  - France_hysteria_101
+  - United States_hysteria_111
+  - Hong Kong_mieru_121
+  - United States_mieru_122
+  - Russia_hy_0
+  - Russia_hy_1
+  - France_hy_4
+  - United States_hy_5
+  - France_hy_6
+  - United States_hy_7
+  - Russia_hy2_0
+  - Russia_hy2_1
+  - France_hy2_2
+  - France_hy2_3
+  - United States_hy2_4
+  - Russia_hy2_5
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
