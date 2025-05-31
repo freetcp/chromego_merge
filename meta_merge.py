@@ -34,25 +34,28 @@ def process_clash(data, index):
     merged_proxies.extend(proxies)
 
 
+'''
 def get_physical_location(address):
-    address = re.sub(":.*", "", address)  # 用正则表达式去除端口部分
+    address = re.sub(':.*', '', address)  # 用正则表达式去除端口部分
     try:
         ip_address = socket.gethostbyname(address)
     except socket.gaierror:
         ip_address = address
+    #url = 'https://api.ip2location.io/?key=3B23CB365F21EE4FA890AC0C2A9FC046&ip='+ip_address
 
     try:
-        reader = geoip2.database.Reader(
-            "GeoLite2-City.mmdb"
-        )  # 这里的路径需要指向你自己的数据库文件
+        #response = requests.get(url)
+        #time.sleep(1)
+        reader = geoip2.database.Reader('GeoLite2-City.mmdb')  # 这里的路径需要指向你自己的数据库文件
         response = reader.city(ip_address)
         country = response.country.name
-        city = response.city.name
-        return f"{country}_{city}"
-        # return f"油管绵阿羊_{country}"
+        #country = response.json()['country_code']
+        #return f"{country}_{city}"
+        return f"{country}"
     except geoip2.errors.AddressNotFoundError as e:
         print(f"Error: {e}")
         return "Unknown"
+'''
 
 
 # 处理sb，待办
