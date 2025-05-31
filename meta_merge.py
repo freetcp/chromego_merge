@@ -290,39 +290,30 @@ def update_warp_proxy_groups(config_warp_data, merged_proxies):
 merged_proxies = []
 
 # 处理 clash URLs
-print("processing clash URLs...")
-process_urls('./urls/clash_urls.txt', process_clash)
+process_urls("./urls/clash_urls.txt", process_clash)
 
 # 处理 shadowtls URLs
-print("processing shadowtls URLs...")
-process_urls('./urls/sb_urls.txt', process_sb)
+# process_urls('./urls/sb_urls.txt', process_sb)
 
 # 处理 hysteria URLs
-print("processing hysteria URLs...")
-process_urls('./urls/hysteria_urls.txt', process_hysteria)
+process_urls("./urls/hysteria_urls.txt", process_hysteria)
 
 # 处理 hysteria2 URLs
-print("processing hysteria2 URLs...")
-process_urls('./urls/hysteria2_urls.txt', process_hysteria2)
+process_urls("./urls/hysteria2_urls.txt", process_hysteria2)
 
 # 处理 xray URLs
-print("processing xray URLs...")
-process_urls('./urls/xray_urls.txt', process_xray)
+process_urls("./urls/xray_urls.txt", process_xray)
 
 # 读取普通的配置文件内容
-with open('./templates/clash_template.yaml', 'r', encoding='utf-8') as file:
+with open("./templates/clash_template.yaml", "r", encoding="utf-8") as file:
     config_data = yaml.safe_load(file)
 
 # 添加合并后的代理到proxies部分
-if 'proxies' not in config_data or not config_data['proxies']:
-    config_data['proxies'] = merged_proxies
+if "proxies" not in config_data or not config_data["proxies"]:
+    config_data["proxies"] = merged_proxies
 else:
-    config_data['proxies'].extend(merged_proxies)
+    config_data["proxies"].extend(merged_proxies)
 
-if 'proxies' not in config_warp_data or not config_warp_data['proxies']:
-    config_warp_data['proxies'] = merged_proxies
-else:
-    config_warp_data['proxies'].extend(merged_proxies)
 
 # 更新自动选择和节点选择的proxies的name部分
 update_proxy_groups(config_data, merged_proxies)
