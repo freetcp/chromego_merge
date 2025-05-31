@@ -1,0 +1,48 @@
+name: Update IP Database
+
+on:
+  schedule:
+    - cron: "0 0 2 * *"  # 每月1日运行一次
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  update-ip-database:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y wget
+
+    - name: Download Database
+      env:
+        IP2LOCATION_LITE_TOKEN: ${{ secrets.IP2LOCATION_LITE_TOKEN }}
+        MAXMIND_LICENSE_KEY: ${{ secrets.MAXMIND_LICENSE_KEY }}   
+      run: |
+        # 下载并解压数据库
+        wget -O GeoLite2-City.tar.gz "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-City&license_key=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&suffix=tar.gz"
+        tar -xzf GeoLite2-City.tar.gz --strip-components=1
+        # mv GeoLite2-City.mmdb ./  # 将数据库文件移到根目录
+        rm -f GeoLite2-City.tar.gz COPYRIGHT.txt LICENSE.txt README.txt  # 删除其余文件
+
+        wget -O DB3LITEBIN.zip "https://www.ip2location.com/download/?token=Ub9p6qpWRbN7ZfI76ctGLRfTDTbbiCgn0j6aaY8BYAerh6l8r2CGdDSXgYLZvPH2&file=DB3LITEBIN"
+        unzip -o DB3LITEBIN.zip
+        rm -f DB3LITEBIN.zip *_LITE.TXT
+
+    - name: Commit and Push Updated Database to GitHub
+      run: |
+        if [[ -n "$(git status --porcelain)" ]]; then
+          echo "Changes detected in the repository."
+          git config core.ignorecase false
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
+        else
+          echo "No changes detected in the repository."
+        fi
