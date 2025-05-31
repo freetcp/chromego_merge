@@ -310,7 +310,6 @@ proxy-groups:
   type: select
   proxies:
   - 自动选择
-  - DIRECT
   - United States_mieru_01
   - Russia_mieru_11
   - United States_hysteria_21
