@@ -88,25 +88,25 @@ def process_clash(data, index):
 
                     merged_proxies.append(vmess_meta)
 
-        elif proxy["type"] == "tuic":
-            server = proxy.get("server", "")
-            port = int(proxy.get("port", 443))
-            uuid = proxy.get("uuid", "")
-            password = proxy.get("password", "")
-            sni = proxy.get("sni", "")
-            insecure = int(proxy.get("skip-cert-verify", 0))
-            udp_relay_mode = proxy.get("udp-relay-mode", "naive")
-            congestion = proxy.get("congestion-controller", "bbr")
-            alpn = (
-                proxy.get("alpn", [])[0]
-                if proxy.get("alpn") and len(proxy["alpn"]) > 0
-                else None
-            )
-            location = get_physical_location(server)
-            name = f"{location}_tuic_{index}"
-            # tuic_meta_neko = f"tuic://{server}:{port}?uuid={uuid}&version=5&password={password}&insecure={insecure}&alpn={alpn}&mode={udp_relay_mode}"
-            tuic_meta = f"tuic://{uuid}:{password}@{server}:{port}?sni={sni}&congestion_control={congestion}&udp_relay_mode={udp_relay_mode}&alpn={alpn}&allow_insecure={insecure}#{name}"
-            merged_proxies.append(tuic_meta)
+                elif proxy["type"] == "tuic":
+                    server = proxy.get("server", "")
+                    port = int(proxy.get("port", 443))
+                    uuid = proxy.get("uuid", "")
+                    password = proxy.get("password", "")
+                    sni = proxy.get("sni", "")
+                    insecure = int(proxy.get("skip-cert-verify", 0))
+                    udp_relay_mode = proxy.get("udp-relay-mode", "naive")
+                    congestion = proxy.get("congestion-controller", "bbr")
+                    alpn = (
+                        proxy.get("alpn", [])[0]
+                        if proxy.get("alpn") and len(proxy["alpn"]) > 0
+                        else None
+                    )
+                    location = get_physical_location(server)
+                    name = f"{location}_tuic_{index}"
+                    # tuic_meta_neko = f"tuic://{server}:{port}?uuid={uuid}&version=5&password={password}&insecure={insecure}&alpn={alpn}&mode={udp_relay_mode}"
+                    tuic_meta = f"tuic://{uuid}:{password}@{server}:{port}?sni={sni}&congestion_control={congestion}&udp_relay_mode={udp_relay_mode}&alpn={alpn}&allow_insecure={insecure}#{name}"
+                    merged_proxies.append(tuic_meta)
 
                 elif proxy['type'] == "hysteria2":
                     server = proxy.get("server", "")
