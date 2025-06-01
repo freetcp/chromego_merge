@@ -74,10 +74,10 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: VN_hysteria_51
+- name: FR_hysteria_51
   type: hysteria
-  server: 123.30.149.21
-  port: 29597
+  server: 62.210.10.113
+  port: 22662
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -315,7 +315,7 @@ proxy-groups:
   - US_hysteria_21
   - RU_hysteria_31
   - FR_tuic_41
-  - VN_hysteria_51
+  - FR_hysteria_51
   - US_hysteria_61
   - US_hysteria_71
   - FR_hysteria_81
@@ -347,7 +347,7 @@ proxy-groups:
   - US_hysteria_21
   - RU_hysteria_31
   - FR_tuic_41
-  - VN_hysteria_51
+  - FR_hysteria_51
   - US_hysteria_61
   - US_hysteria_71
   - FR_hysteria_81
