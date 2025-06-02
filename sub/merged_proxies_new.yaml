@@ -74,19 +74,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: FR_hysteria_51
-  type: hysteria
-  server: 62.210.10.113
-  port: 22662
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: US_hysteria_61
+- name: US_hysteria_51
   type: hysteria
   server: 198.40.52.27
   port: 36194
@@ -98,7 +86,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: FR_hysteria_71
+- name: FR_hysteria_61
   type: hysteria
   server: 62.210.10.113
   port: 22662
@@ -110,7 +98,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: US_tuic_81
+- name: US_tuic_71
   server: 108.181.5.131
   port: 34008
   type: tuic
@@ -123,7 +111,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: FR_hysteria_91
+- name: FR_hysteria_81
   type: hysteria
   server: 195.154.200.178
   port: 46938
@@ -135,7 +123,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: US_hysteria_101
+- name: US_hysteria_91
   type: hysteria
   server: 108.181.24.77
   port: 11512
@@ -147,14 +135,14 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: HK_mieru_111
+- name: HK_mieru_101
   type: mieru
   server: 175.29.23.45
   port: 28855
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: US_mieru_112
+- name: US_mieru_102
   type: mieru
   server: 45.150.165.84
   port: 8067
@@ -175,21 +163,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: RU_hy_1
-  type: hysteria
-  server: 185.22.155.71
-  port: 10803
-  ports: 10803
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: FR_hy_4
+- name: FR_hy_2
   type: hysteria
   server: 195.154.200.40
   port: 15010
@@ -203,7 +177,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: US_hy_5
+- name: US_hy_3
   type: hysteria
   server: 198.40.52.27
   port: 36194
@@ -217,7 +191,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: NL_hy_6
+- name: NL_hy_4
   type: hysteria
   server: 51.159.226.1
   port: 14241
@@ -231,7 +205,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: US_hy_7
+- name: US_hy_5
   type: hysteria
   server: 208.87.243.187
   port: 40528
@@ -303,20 +277,18 @@ proxy-groups:
   - US_hysteria_21
   - RU_hysteria_31
   - FR_tuic_41
-  - FR_hysteria_51
-  - US_hysteria_61
-  - FR_hysteria_71
-  - US_tuic_81
-  - FR_hysteria_91
-  - US_hysteria_101
-  - HK_mieru_111
-  - US_mieru_112
+  - US_hysteria_51
+  - FR_hysteria_61
+  - US_tuic_71
+  - FR_hysteria_81
+  - US_hysteria_91
+  - HK_mieru_101
+  - US_mieru_102
   - RU_hy_0
-  - RU_hy_1
-  - FR_hy_4
+  - FR_hy_2
+  - US_hy_3
+  - NL_hy_4
   - US_hy_5
-  - NL_hy_6
-  - US_hy_7
   - RU_hy2_0
   - RU_hy2_1
   - FR_hy2_2
@@ -334,20 +306,18 @@ proxy-groups:
   - US_hysteria_21
   - RU_hysteria_31
   - FR_tuic_41
-  - FR_hysteria_51
-  - US_hysteria_61
-  - FR_hysteria_71
-  - US_tuic_81
-  - FR_hysteria_91
-  - US_hysteria_101
-  - HK_mieru_111
-  - US_mieru_112
+  - US_hysteria_51
+  - FR_hysteria_61
+  - US_tuic_71
+  - FR_hysteria_81
+  - US_hysteria_91
+  - HK_mieru_101
+  - US_mieru_102
   - RU_hy_0
-  - RU_hy_1
-  - FR_hy_4
+  - FR_hy_2
+  - US_hy_3
+  - NL_hy_4
   - US_hy_5
-  - NL_hy_6
-  - US_hy_7
   - RU_hy2_0
   - RU_hy2_1
   - FR_hy2_2
