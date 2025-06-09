@@ -6,6 +6,13 @@ proxies:
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
+  - name: HK2_mieru
+    type: mieru
+    server: 175.29.23.164
+    port: 28855
+    transport: TCP
+    username: dongtaiwang.com
+    password: dongtaiwang.com
   - name: US_mieru
     type: mieru
     server: 45.150.165.84
@@ -19,6 +26,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - HK_mieru
+      - HK2_mieru
       - US_mieru
   - name: ♻️ 自动选择
     type: url-test
@@ -27,6 +35,7 @@ proxy-groups:
     tolerance: 5000
     proxies:
       - HK_mieru
+      - HK2_mieru
       - US_mieru
 rules:
   - MATCH, 🚀 节点选择
