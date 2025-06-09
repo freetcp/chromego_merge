@@ -283,7 +283,15 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: FR_hy2_2
+- name: US_hy2_2
+  type: hysteria2
+  server: 108.181.22.213
+  port: 15167
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: FR_hy2_3
   type: hysteria2
   server: 51.159.111.32
   port: 31180
@@ -291,7 +299,7 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: NL_hy2_3
+- name: NL_hy2_4
   type: hysteria2
   server: hy2-2.694463.xyz
   port: 4489
@@ -299,7 +307,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: US_hy2_4
+- name: US_hy2_5
   type: hysteria2
   server: 108.181.5.130
   port: 4710
@@ -307,7 +315,7 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: RU_hy2_5
+- name: RU_hy2_6
   type: hysteria2
   server: 46.17.41.5
   port: 12904
@@ -339,10 +347,11 @@ proxy-groups:
   - US_hy_5
   - RU_hy2_0
   - RU_hy2_1
-  - FR_hy2_2
-  - NL_hy2_3
-  - US_hy2_4
-  - RU_hy2_5
+  - US_hy2_2
+  - FR_hy2_3
+  - NL_hy2_4
+  - US_hy2_5
+  - RU_hy2_6
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
