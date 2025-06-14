@@ -115,12 +115,12 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: US_hysteria_51
+- name: FR_hysteria_51
   type: hysteria
-  server: 198.40.52.27
-  port: 36194
+  server: 51.159.111.32
+  port: 23880
   auth-str: dongtaiwang.com
-  sni: apple.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -227,15 +227,15 @@ proxies:
   - h3
 - name: US_hy_3
   type: hysteria
-  server: 198.40.52.27
-  port: 36194
-  ports: 36194
+  server: 208.87.243.151
+  port: 17549
+  ports: 17549
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -332,7 +332,7 @@ proxy-groups:
   - US_hysteria_21
   - RU_hysteria_31
   - FR_tuic_41
-  - US_hysteria_51
+  - FR_hysteria_51
   - FR_hysteria_61
   - US_tuic_71
   - FR_hysteria_81
