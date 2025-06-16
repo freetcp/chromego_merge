@@ -283,7 +283,15 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: US_hy2_2
+- name: NL_hy2_2
+  type: hysteria2
+  server: 51.158.218.2
+  port: 4489
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: US_hy2_3
   type: hysteria2
   server: 108.181.22.213
   port: 15167
@@ -291,7 +299,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: FR_hy2_3
+- name: FR_hy2_4
   type: hysteria2
   server: 51.159.111.32
   port: 31180
@@ -299,7 +307,7 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: NL_hy2_4
+- name: NL_hy2_5
   type: hysteria2
   server: 51.159.226.1
   port: 4489
@@ -307,7 +315,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: US_hy2_5
+- name: US_hy2_6
   type: hysteria2
   server: 108.181.5.130
   port: 4710
@@ -315,7 +323,7 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: RU_hy2_6
+- name: RU_hy2_7
   type: hysteria2
   server: 46.17.41.5
   port: 12904
@@ -323,6 +331,62 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
+- name: TW_reality_0
+  type: vless
+  server: tw-2.534582.xyz
+  port: 39747
+  uuid: cf111519-9992-4e2e-8675-8e8edc178578
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  reality-opts:
+    public-key: nHo49RB7F74I1uH_YitKGY5GxejTq0XcY8BbEKe99xE
+    short-id: ''
+- name: US_reality_1
+  type: vless
+  server: 108.181.3.68
+  port: 51499
+  uuid: c643de0a-9678-4c18-9f55-58620425bac0
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  reality-opts:
+    public-key: S4-VtlwDUlz7CbSlpf8mqD4ejRWFOISwCXqdtm3JCww
+    short-id: ''
+- name: US_reality_2
+  type: vless
+  server: 198.40.52.26
+  port: 20783
+  uuid: 942e9337-6cd1-471e-ae3e-6a4ae0f38465
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  reality-opts:
+    public-key: hoDqIoXDTQap0fGHAsSkCPmGq3CpUjjnholUcahMb3Y
+    short-id: ''
+- name: US_reality_3
+  type: vless
+  server: 108.181.3.68
+  port: 51499
+  uuid: c643de0a-9678-4c18-9f55-58620425bac0
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  reality-opts:
+    public-key: S4-VtlwDUlz7CbSlpf8mqD4ejRWFOISwCXqdtm3JCww
+    short-id: ''
 proxy-groups:
 - name: 节点选择
   type: select
@@ -347,11 +411,16 @@ proxy-groups:
   - US_hy_5
   - RU_hy2_0
   - RU_hy2_1
-  - US_hy2_2
-  - FR_hy2_3
-  - NL_hy2_4
-  - US_hy2_5
-  - RU_hy2_6
+  - NL_hy2_2
+  - US_hy2_3
+  - FR_hy2_4
+  - NL_hy2_5
+  - US_hy2_6
+  - RU_hy2_7
+  - TW_reality_0
+  - US_reality_1
+  - US_reality_2
+  - US_reality_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
