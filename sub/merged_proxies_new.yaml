@@ -331,62 +331,6 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: TW_reality_0
-  type: vless
-  server: tw-2.534582.xyz
-  port: 39747
-  uuid: cf111519-9992-4e2e-8675-8e8edc178578
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: aws.amazon.com
-  reality-opts:
-    public-key: nHo49RB7F74I1uH_YitKGY5GxejTq0XcY8BbEKe99xE
-    short-id: ''
-- name: US_reality_1
-  type: vless
-  server: 108.181.3.68
-  port: 51499
-  uuid: c643de0a-9678-4c18-9f55-58620425bac0
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: aws.amazon.com
-  reality-opts:
-    public-key: S4-VtlwDUlz7CbSlpf8mqD4ejRWFOISwCXqdtm3JCww
-    short-id: ''
-- name: US_reality_2
-  type: vless
-  server: 198.40.52.26
-  port: 20783
-  uuid: 942e9337-6cd1-471e-ae3e-6a4ae0f38465
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: aws.amazon.com
-  reality-opts:
-    public-key: hoDqIoXDTQap0fGHAsSkCPmGq3CpUjjnholUcahMb3Y
-    short-id: ''
-- name: US_reality_3
-  type: vless
-  server: 108.181.3.68
-  port: 51499
-  uuid: c643de0a-9678-4c18-9f55-58620425bac0
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: aws.amazon.com
-  reality-opts:
-    public-key: S4-VtlwDUlz7CbSlpf8mqD4ejRWFOISwCXqdtm3JCww
-    short-id: ''
 proxy-groups:
 - name: 节点选择
   type: select
@@ -417,10 +361,6 @@ proxy-groups:
   - NL_hy2_5
   - US_hy2_6
   - RU_hy2_7
-  - TW_reality_0
-  - US_reality_1
-  - US_reality_2
-  - US_reality_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
