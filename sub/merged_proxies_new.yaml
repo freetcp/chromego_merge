@@ -275,10 +275,10 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: RU_hy2_1
+- name: NL_hy2_1
   type: hysteria2
-  server: 45.129.2.248
-  port: 23579
+  server: 163.172.217.10
+  port: 10011
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -354,7 +354,7 @@ proxy-groups:
   - NL_hy_4
   - US_hy_5
   - RU_hy2_0
-  - RU_hy2_1
+  - NL_hy2_1
   - NL_hy2_2
   - US_hy2_3
   - FR_hy2_4
