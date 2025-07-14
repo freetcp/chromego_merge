@@ -310,7 +310,7 @@ proxies:
 - name: NL_hy2_5
   type: hysteria2
   server: 51.159.226.1
-  port: 50066
+  port: 35810
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
