@@ -307,10 +307,10 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: NL_hy2_5
+- name: US_hy2_5
   type: hysteria2
-  server: 51.159.226.1
-  port: 35810
+  server: 208.87.243.187
+  port: 22222
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -358,7 +358,7 @@ proxy-groups:
   - NL_hy2_2
   - US_hy2_3
   - FR_hy2_4
-  - NL_hy2_5
+  - US_hy2_5
   - US_hy2_6
   - RU_hy2_7
 rules:
