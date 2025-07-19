@@ -211,11 +211,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: NL_hy_2
+- name: FR_hy_2
   type: hysteria
-  server: 51.159.226.1
-  port: 14241
-  ports: 14241
+  server: 195.154.200.40
+  port: 15010
+  ports: 15010
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -349,7 +349,7 @@ proxy-groups:
   - HK_mieru_102
   - US_mieru_103
   - RU_hy_0
-  - NL_hy_2
+  - FR_hy_2
   - US_hy_3
   - NL_hy_4
   - US_hy_5
