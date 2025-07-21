@@ -318,7 +318,7 @@ proxies:
 - name: US_hy2_6
   type: hysteria2
   server: 108.181.5.130
-  port: 4710
+  port: 63015
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
