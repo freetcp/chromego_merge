@@ -152,18 +152,13 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: FR_hysteria_81
-  type: hysteria
-  server: 195.154.200.178
-  port: 46938
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+- name: US_mieru_81
+  type: mieru
+  server: 108.181.23.41
+  port: 28676
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
 - name: US_hysteria_91
   type: hysteria
   server: 108.181.24.77
@@ -343,7 +338,7 @@ proxy-groups:
   - FR_hysteria_51
   - FR_hysteria_61
   - US_tuic_71
-  - FR_hysteria_81
+  - US_mieru_81
   - US_hysteria_91
   - HK_mieru_101
   - HK_mieru_102
