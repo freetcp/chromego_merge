@@ -318,13 +318,13 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: RU_hy2_7
+- name: NL_hy2_7
   type: hysteria2
-  server: 46.17.41.5
-  port: 12904
+  server: 51.158.218.2
+  port: 50066
   password: dongtaiwang.com
   fast-open: true
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
@@ -355,7 +355,7 @@ proxy-groups:
   - FR_hy2_4
   - US_hy2_5
   - US_hy2_6
-  - RU_hy2_7
+  - NL_hy2_7
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
