@@ -197,11 +197,11 @@ proxies:
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: US_hy_0
+- name: NL_hy_0
   type: hysteria
-  server: 172.245.235.201
-  port: 38814
-  ports: 38814
+  server: 109.104.153.91
+  port: 37519
+  ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -269,16 +269,16 @@ proxies:
   - h3
 - name: FR_hy2_0
   type: hysteria2
-  server: 64.31.63.57
-  port: 44462
+  server: 104.168.10.176
+  port: 35205
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
 - name: FR_hy2_1
   type: hysteria2
-  server: 64.31.63.57
-  port: 44462
+  server: 104.168.10.176
+  port: 35205
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -348,7 +348,7 @@ proxy-groups:
   - HK_mieru_101
   - HK_mieru_102
   - US_mieru_103
-  - US_hy_0
+  - NL_hy_0
   - FR_hy_2
   - US_hy_3
   - NL_hy_4
