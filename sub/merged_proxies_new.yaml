@@ -85,9 +85,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: US_hysteria_21
+- name: -_hysteria_21
   type: hysteria
-  server: 208.87.243.151
+  server: 2604:6600:2004::18b
   port: 38845
   auth_str: dongtaiwang.com
   alpn:
@@ -444,7 +444,7 @@ proxy-groups:
   proxies:
   - US_mieru_01
   - US_hysteria_11
-  - US_hysteria_21
+  - -_hysteria_21
   - NL_hysteria_31
   - FR_tuic_41
   - -_tuic_42
