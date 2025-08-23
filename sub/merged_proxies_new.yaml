@@ -271,7 +271,21 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: US_hysteria_91
+- name: TW_anytls_91
+  type: anytls
+  server: tw.399403.xyz
+  port: 8443
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: US_hysteria_101
   type: hysteria
   server: 108.181.24.77
   port: 37872
@@ -283,24 +297,17 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: HK_mieru_101
+- name: HK_mieru_131
   type: mieru
-  server: 175.29.23.45
-  port: 28855
+  server: 175.29.23.246
+  port: 10011
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: HK_mieru_102
+- name: HK_mieru_132
   type: mieru
   server: 175.29.23.164
   port: 28855
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
-- name: US_mieru_103
-  type: mieru
-  server: 45.150.165.84
-  port: 8067
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
@@ -459,10 +466,10 @@ proxy-groups:
   - -_hysteria_65
   - US_tuic_71
   - US_tuic_81
-  - US_hysteria_91
-  - HK_mieru_101
-  - HK_mieru_102
-  - US_mieru_103
+  - TW_anytls_91
+  - US_hysteria_101
+  - HK_mieru_131
+  - HK_mieru_132
   - NL_hy_0
   - FR_hy_2
   - US_hy_3
