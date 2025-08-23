@@ -1,8 +1,8 @@
 proxies:
   - name: HK_mieru
     type: mieru
-    server: 175.29.23.45
-    port: 28855
+    server: 175.29.23.246
+    port: 10011
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
