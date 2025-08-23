@@ -7,5 +7,6 @@ https://www.gitlabip.xyz/Alvin9999/PAC/master/backup/img/1/2/ipp/quick/3/config.
 https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/clash.meta2/1/config.yaml
 https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/clash.meta2/2/config.yaml
 https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/clash.meta2/3/config.yaml
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/clash.meta2/5/config.yaml
 https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/clash.meta2/6/config.yaml
 https://raw.githubusercontent.com/freetcp/chromego_merge/refs/heads/main/urls/mieru.yaml
