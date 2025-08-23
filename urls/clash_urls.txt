@@ -9,4 +9,6 @@ https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2
 https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/clash.meta2/3/config.yaml
 https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/clash.meta2/5/config.yaml
 https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/clash.meta2/6/config.yaml
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/shadowquic/1/client.yaml
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/shadowquic/2/client.yaml
 https://raw.githubusercontent.com/freetcp/chromego_merge/refs/heads/main/urls/mieru.yaml
