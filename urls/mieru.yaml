@@ -13,13 +13,6 @@ proxies:
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
-  - name: US_mieru
-    type: mieru
-    server: 45.150.165.84
-    port: 8067
-    transport: TCP
-    username: dongtaiwang.com
-    password: dongtaiwang.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -27,7 +20,6 @@ proxy-groups:
       - ♻️ 自动选择
       - HK_mieru
       - HK2_mieru
-      - US_mieru
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -36,6 +28,5 @@ proxy-groups:
     proxies:
       - HK_mieru
       - HK2_mieru
-      - US_mieru
 rules:
   - MATCH, 🚀 节点选择
