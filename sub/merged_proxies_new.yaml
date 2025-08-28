@@ -188,7 +188,7 @@ proxies:
 - name: FR_hysteria_61
   type: hysteria
   server: 62.210.10.113
-  port: 13767
+  port: 14801
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -200,7 +200,7 @@ proxies:
 - name: -_hysteria_62
   type: hysteria
   server: 2001:bc8:32d7:306::123
-  port: 13767
+  port: 14801
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -212,7 +212,7 @@ proxies:
 - name: -_hysteria_63
   type: hysteria
   server: 2001:bc8:32d7:306::124
-  port: 13767
+  port: 14801
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -224,7 +224,7 @@ proxies:
 - name: -_hysteria_64
   type: hysteria
   server: 2001:bc8:32d7:306::125
-  port: 13767
+  port: 14801
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -236,7 +236,7 @@ proxies:
 - name: -_hysteria_65
   type: hysteria
   server: 2001:bc8:32d7:306::126
-  port: 13767
+  port: 14801
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
