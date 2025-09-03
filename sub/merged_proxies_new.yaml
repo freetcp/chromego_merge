@@ -392,6 +392,30 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
+- name: US_shadowtls_8
+  type: ss
+  server: www2.dtku44.xyz
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 6qfEwR4QOrHq+k3csNdEZgMa+Y890g/eouGnVEtxb0c=
+  plugin: shadow-tls
+  client-fingerprint: chrome
+  plugin-opts:
+    host: nijigen-works.jp
+    password: LdjpJtNZK+2WhXfRY+FxR9sokcOYoddKAx8dN7q8FOI=
+    version: 3
+- name: US_shadowtls_9
+  type: ss
+  server: 172.83.156.157
+  port: 44550
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 5IH4rBauUuOT4VpAshgMPMSQ3Tf+oJjDY/jEDbIel2Q=
+  plugin: shadow-tls
+  client-fingerprint: chrome
+  plugin-opts:
+    host: nijigen-works.jp
+    password: FHDLxKgzbcDCPmijble8uT1gddgBmOxA1XXeDgyqgGc=
+    version: 3
 - name: FR_hy_0
   type: hysteria
   server: 195.154.200.40
@@ -510,6 +534,8 @@ proxy-groups:
   - FR_hysteria_71
   - FR_hysteria_81
   - TW_anytls_91
+  - US_shadowtls_8
+  - US_shadowtls_9
   - FR_hy_0
   - US_hy_1
   - NL_hy_2
