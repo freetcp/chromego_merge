@@ -126,11 +126,11 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: US_tuic_11
-  server: 108.181.5.131
-  port: 22998
+- name: FR_tuic_11
+  server: 62.210.10.140
+  port: 23556
   type: tuic
-  uuid: f350ada4-7d6a-46d0-bc44-27f93436286f
+  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
   password: dongtaiwang.com
   alpn:
   - h3
@@ -139,13 +139,19 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: US_mieru_21
-  type: mieru
-  server: 108.181.23.41
-  port: 50223
-  transport: TCP
-  username: dongtaiwang.com
+- name: -_tuic_21
+  server: 2001:bc8:32d7:312::2
+  port: 23556
+  type: tuic
+  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
   password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: US_hysteria_31
   type: hysteria
   server: 108.181.24.77
@@ -450,14 +456,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: US_hy2_1
-  type: hysteria2
-  server: 108.181.5.130
-  port: 63015
-  password: dongtaiwang.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
 - name: FR_hy2_2
   type: hysteria2
   server: 51.159.111.32
@@ -470,14 +468,6 @@ proxies:
   type: hysteria2
   server: 51.158.218.2
   port: 50066
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: US_hy2_4
-  type: hysteria2
-  server: 108.181.22.213
-  port: 15167
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -499,8 +489,8 @@ proxy-groups:
   - -_hysteria_03
   - -_hysteria_04
   - -_hysteria_05
-  - US_tuic_11
-  - US_mieru_21
+  - FR_tuic_11
+  - -_tuic_21
   - US_hysteria_31
   - -_tuic_41
   - -_tuic_42
@@ -525,10 +515,8 @@ proxy-groups:
   - NL_hy_2
   - US_hy_3
   - US_hy2_0
-  - US_hy2_1
   - FR_hy2_2
   - NL_hy2_3
-  - US_hy2_4
   - NL_hy2_5
 rules:
 - DOMAIN,clash.razord.top,DIRECT
