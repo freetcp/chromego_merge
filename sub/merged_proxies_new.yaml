@@ -66,126 +66,7 @@ dns:
     - tls://dns.google
     - tls://cloudflare-dns.com
 proxies:
-- name: US_mieru_01
-  type: mieru
-  server: 108.181.23.41
-  port: 50223
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
-- name: US_hysteria_11
-  type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: -_hysteria_21
-  type: hysteria
-  server: 2604:6600:2004::18b
-  port: 38845
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
-- name: NL_hysteria_31
-  type: hysteria
-  server: 109.104.153.91
-  port: 37519
-  ports: 10000-20000
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
-  sni: apple.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
-- name: FR_tuic_41
-  server: 62.210.10.113
-  port: 33998
-  type: tuic
-  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: -_tuic_42
-  server: 2001:bc8:32d7:306::123
-  port: 33998
-  type: tuic
-  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: -_tuic_43
-  server: 2001:bc8:32d7:306::124
-  port: 33998
-  type: tuic
-  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: -_tuic_44
-  server: 2001:bc8:32d7:306::125
-  port: 33998
-  type: tuic
-  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: -_tuic_45
-  server: 2001:bc8:32d7:306::126
-  port: 33998
-  type: tuic
-  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: FR_hysteria_51
-  type: hysteria
-  server: 51.159.111.32
-  port: 23880
-  auth-str: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: FR_hysteria_61
+- name: FR_hysteria_01
   type: hysteria
   server: 51.159.107.20
   port: 20001
@@ -197,7 +78,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: -_hysteria_62
+- name: -_hysteria_02
   type: hysteria
   server: 2001:bc8:1203:25::1
   port: 20001
@@ -209,7 +90,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: -_hysteria_63
+- name: -_hysteria_03
   type: hysteria
   server: 2001:bc8:1203:25::2
   port: 20001
@@ -221,7 +102,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: -_hysteria_64
+- name: -_hysteria_04
   type: hysteria
   server: 2001:bc8:1203:25::3
   port: 20001
@@ -233,7 +114,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: -_hysteria_65
+- name: -_hysteria_05
   type: hysteria
   server: 2001:bc8:1203:25::4
   port: 20001
@@ -245,7 +126,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: US_tuic_71
+- name: US_tuic_11
   server: 108.181.5.131
   port: 22998
   type: tuic
@@ -258,20 +139,26 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: US_tuic_81
-  server: 108.181.5.131
-  port: 22998
-  type: tuic
-  uuid: f350ada4-7d6a-46d0-bc44-27f93436286f
+- name: US_mieru_21
+  type: mieru
+  server: 108.181.23.41
+  port: 50223
+  transport: TCP
+  username: dongtaiwang.com
   password: dongtaiwang.com
+- name: US_hysteria_31
+  type: hysteria
+  server: 108.181.24.77
+  port: 11512
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: -_tuic_91
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: -_tuic_41
   server: 2001:bc8:1203:106::100
   port: 55111
   type: tuic
@@ -284,7 +171,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: -_tuic_92
+- name: -_tuic_42
   server: 2001:bc8:1203:106::101
   port: 55111
   type: tuic
@@ -297,7 +184,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: -_tuic_93
+- name: -_tuic_43
   server: 2001:bc8:1203:106::102
   port: 55111
   type: tuic
@@ -310,7 +197,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: -_tuic_94
+- name: -_tuic_44
   server: 2001:bc8:1203:106::103
   port: 55111
   type: tuic
@@ -323,7 +210,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: -_tuic_95
+- name: -_tuic_45
   server: 2001:bc8:1203:106::104
   port: 55111
   type: tuic
@@ -336,7 +223,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: -_hysteria_101
+- name: -_hysteria_51
   type: hysteria
   server: 2001:bc8:1203:106::200
   port: 47821
@@ -348,7 +235,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: -_hysteria_102
+- name: -_hysteria_52
   type: hysteria
   server: 2001:bc8:1203:106::201
   port: 47821
@@ -360,7 +247,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: -_hysteria_103
+- name: -_hysteria_53
   type: hysteria
   server: 2001:bc8:1203:106::202
   port: 47821
@@ -372,7 +259,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: -_hysteria_104
+- name: -_hysteria_54
   type: hysteria
   server: 2001:bc8:1203:106::203
   port: 47821
@@ -384,7 +271,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: -_hysteria_105
+- name: -_hysteria_55
   type: hysteria
   server: 2001:bc8:1203:106::204
   port: 47821
@@ -396,14 +283,117 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: HK_mieru_131
+- name: FR_tuic_61
+  server: 62.210.10.113
+  port: 33998
+  type: tuic
+  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: -_tuic_62
+  server: 2001:bc8:32d7:306::123
+  port: 33998
+  type: tuic
+  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: -_tuic_63
+  server: 2001:bc8:32d7:306::124
+  port: 33998
+  type: tuic
+  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: -_tuic_64
+  server: 2001:bc8:32d7:306::125
+  port: 33998
+  type: tuic
+  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: -_tuic_65
+  server: 2001:bc8:32d7:306::126
+  port: 33998
+  type: tuic
+  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: FR_hysteria_71
+  type: hysteria
+  server: 62.210.10.113
+  port: 13767
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: FR_hysteria_81
+  type: hysteria
+  server: 51.159.111.32
+  port: 23880
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: TW_anytls_91
+  type: anytls
+  server: fan2.856098.xyz
+  port: 8443
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: HK_mieru_121
   type: mieru
   server: 175.29.23.246
-  port: 10011
+  port: 28231
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: HK_mieru_132
+- name: HK_mieru_122
   type: mieru
   server: 175.29.23.164
   port: 28855
@@ -548,35 +538,34 @@ proxy-groups:
 - name: 节点选择
   type: select
   proxies:
-  - US_mieru_01
-  - US_hysteria_11
-  - -_hysteria_21
-  - NL_hysteria_31
-  - FR_tuic_41
+  - FR_hysteria_01
+  - -_hysteria_02
+  - -_hysteria_03
+  - -_hysteria_04
+  - -_hysteria_05
+  - US_tuic_11
+  - US_mieru_21
+  - US_hysteria_31
+  - -_tuic_41
   - -_tuic_42
   - -_tuic_43
   - -_tuic_44
   - -_tuic_45
-  - FR_hysteria_51
-  - FR_hysteria_61
-  - -_hysteria_62
-  - -_hysteria_63
-  - -_hysteria_64
-  - -_hysteria_65
-  - US_tuic_71
-  - US_tuic_81
-  - -_tuic_91
-  - -_tuic_92
-  - -_tuic_93
-  - -_tuic_94
-  - -_tuic_95
-  - -_hysteria_101
-  - -_hysteria_102
-  - -_hysteria_103
-  - -_hysteria_104
-  - -_hysteria_105
-  - HK_mieru_131
-  - HK_mieru_132
+  - -_hysteria_51
+  - -_hysteria_52
+  - -_hysteria_53
+  - -_hysteria_54
+  - -_hysteria_55
+  - FR_tuic_61
+  - -_tuic_62
+  - -_tuic_63
+  - -_tuic_64
+  - -_tuic_65
+  - FR_hysteria_71
+  - FR_hysteria_81
+  - TW_anytls_91
+  - HK_mieru_121
+  - HK_mieru_122
   - NL_hy_0
   - FR_hy_2
   - US_hy_3
