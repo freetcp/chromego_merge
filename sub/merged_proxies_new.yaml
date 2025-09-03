@@ -392,30 +392,6 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: US_shadowtls_8
-  type: ss
-  server: www2.dtku44.xyz
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 6qfEwR4QOrHq+k3csNdEZgMa+Y890g/eouGnVEtxb0c=
-  plugin: shadow-tls
-  client-fingerprint: chrome
-  plugin-opts:
-    host: nijigen-works.jp
-    password: LdjpJtNZK+2WhXfRY+FxR9sokcOYoddKAx8dN7q8FOI=
-    version: 3
-- name: US_shadowtls_9
-  type: ss
-  server: 172.83.156.157
-  port: 44550
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5IH4rBauUuOT4VpAshgMPMSQ3Tf+oJjDY/jEDbIel2Q=
-  plugin: shadow-tls
-  client-fingerprint: chrome
-  plugin-opts:
-    host: nijigen-works.jp
-    password: FHDLxKgzbcDCPmijble8uT1gddgBmOxA1XXeDgyqgGc=
-    version: 3
 - name: FR_hy_0
   type: hysteria
   server: 195.154.200.40
@@ -447,8 +423,8 @@ proxies:
 - name: NL_hy_2
   type: hysteria
   server: 51.159.226.1
-  port: 14241
-  ports: 14241
+  port: 49003
+  ports: 49003
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -458,11 +434,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: US_hy_3
+- name: NL_hy_3
   type: hysteria
-  server: 208.87.243.187
-  port: 15823
-  ports: 15823
+  server: 51.159.226.1
+  port: 49003
+  ports: 49003
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -504,6 +480,20 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
+- name: -_reality_3
+  type: vless
+  server: 2001:bc8:32d7:302::15
+  port: 34324
+  uuid: 26c462ba-a90c-4814-9d7c-a629bc0bdb5c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: dash.cloudflare.com
+  reality-opts:
+    public-key: pHn5CHa2P6-lNBIkTOI3zJQN19jfNFkXxGFuyefpP0M
+    short-id: ''
 proxy-groups:
 - name: 节点选择
   type: select
@@ -534,16 +524,15 @@ proxy-groups:
   - FR_hysteria_71
   - FR_hysteria_81
   - TW_anytls_91
-  - US_shadowtls_8
-  - US_shadowtls_9
   - FR_hy_0
   - US_hy_1
   - NL_hy_2
-  - US_hy_3
+  - NL_hy_3
   - US_hy2_0
   - FR_hy2_2
   - NL_hy2_3
   - NL_hy2_5
+  - -_reality_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
