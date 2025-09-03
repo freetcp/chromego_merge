@@ -1,10 +1,9 @@
 https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/naiveproxy/1/config.json
 https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/naiveproxy/2/config.json
-https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/mieru/1/config.json
-https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/mieru/2/config.json
-https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/juicity/1/config.json
-https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/juicity/2/config.json
-https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/singbox/1/config.json
-https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/singbox/2/config.json
-https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/singbox/3/config.json
-https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/singbox/4/config.json
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/mieru/1/config.json
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/mieru/2/config.json
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/juicity/1/config.json
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/juicity/2/config.json
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/singbox/1/config.json
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/singbox/2/config.json
+
