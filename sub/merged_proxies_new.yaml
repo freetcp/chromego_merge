@@ -386,35 +386,7 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: HK_mieru_121
-  type: mieru
-  server: 175.29.23.246
-  port: 28231
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
-- name: HK_mieru_122
-  type: mieru
-  server: 175.29.23.164
-  port: 28855
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
-- name: NL_hy_0
-  type: hysteria
-  server: 109.104.153.91
-  port: 37519
-  ports: 10000-20000
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: FR_hy_2
+- name: FR_hy_0
   type: hysteria
   server: 195.154.200.40
   port: 15010
@@ -428,7 +400,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: US_hy_3
+- name: US_hy_1
   type: hysteria
   server: 208.87.243.151
   port: 38845
@@ -442,7 +414,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: NL_hy_4
+- name: NL_hy_2
   type: hysteria
   server: 51.159.226.1
   port: 14241
@@ -456,7 +428,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: US_hy_5
+- name: US_hy_3
   type: hysteria
   server: 208.87.243.187
   port: 15823
@@ -470,47 +442,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: FR_hy2_0
-  type: hysteria2
-  server: 104.168.10.176
-  port: 35205
-  password: dongtaiwang.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
-- name: FR_hy2_1
-  type: hysteria2
-  server: 104.168.10.176
-  port: 35205
-  password: dongtaiwang.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
-- name: NL_hy2_2
-  type: hysteria2
-  server: 51.158.218.2
-  port: 50066
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: US_hy2_3
-  type: hysteria2
-  server: 108.181.22.213
-  port: 15167
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: FR_hy2_4
-  type: hysteria2
-  server: 51.159.111.32
-  port: 5355
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: US_hy2_5
+- name: US_hy2_0
   type: hysteria2
   server: 208.87.243.187
   port: 22222
@@ -518,7 +450,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: US_hy2_6
+- name: US_hy2_1
   type: hysteria2
   server: 108.181.5.130
   port: 63015
@@ -526,7 +458,31 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: NL_hy2_7
+- name: FR_hy2_2
+  type: hysteria2
+  server: 51.159.111.32
+  port: 5355
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: NL_hy2_3
+  type: hysteria2
+  server: 51.158.218.2
+  port: 50066
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: US_hy2_4
+  type: hysteria2
+  server: 108.181.22.213
+  port: 15167
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: NL_hy2_5
   type: hysteria2
   server: 51.158.218.2
   port: 50066
@@ -564,21 +520,16 @@ proxy-groups:
   - FR_hysteria_71
   - FR_hysteria_81
   - TW_anytls_91
-  - HK_mieru_121
-  - HK_mieru_122
-  - NL_hy_0
-  - FR_hy_2
+  - FR_hy_0
+  - US_hy_1
+  - NL_hy_2
   - US_hy_3
-  - NL_hy_4
-  - US_hy_5
-  - FR_hy2_0
-  - FR_hy2_1
-  - NL_hy2_2
-  - US_hy2_3
-  - FR_hy2_4
-  - US_hy2_5
-  - US_hy2_6
-  - NL_hy2_7
+  - US_hy2_0
+  - US_hy2_1
+  - FR_hy2_2
+  - NL_hy2_3
+  - US_hy2_4
+  - NL_hy2_5
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
