@@ -152,18 +152,22 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: US_hysteria_31
-  type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+- name: -_vless_31
+  type: vless
+  server: 2001:bc8:32d7:312::4
+  port: 10033
+  uuid: 56618bde-5a09-4ef8-ae56-6e7a8d69ec67
+  network: grpc
+  udp: true
+  tls: true
+  flow: null
+  servername: nijigen-works.jp
+  reality-opts:
+    public-key: m1ORavmKKsF8kn6JfNF1m35wRORu8c6YLyxpSfyiYQ0
+    short-id: dfdfb0e2e2d400c4
+  grpc-opts:
+    grpc-service-name: FhwHiFzK
+  client-fingerprint: chrome
 - name: -_tuic_41
   server: 2001:bc8:1203:106::100
   port: 55111
@@ -406,17 +410,17 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: US_hy_1
+- name: FR_hy_1
   type: hysteria
-  server: 208.87.243.151
-  port: 38845
-  ports: 38845
+  server: 62.210.127.217
+  port: 40099
+  ports: 40099
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -505,7 +509,7 @@ proxy-groups:
   - -_hysteria_05
   - FR_tuic_11
   - -_tuic_21
-  - US_hysteria_31
+  - -_vless_31
   - -_tuic_41
   - -_tuic_42
   - -_tuic_43
@@ -525,7 +529,7 @@ proxy-groups:
   - FR_hysteria_81
   - TW_anytls_91
   - FR_hy_0
-  - US_hy_1
+  - FR_hy_1
   - NL_hy_2
   - NL_hy_3
   - US_hy2_0
