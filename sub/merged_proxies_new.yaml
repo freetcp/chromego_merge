@@ -381,20 +381,18 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: TW_anytls_91
-  type: anytls
-  server: fan2.856098.xyz
-  port: 8443
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
-  alpn:
-  - h2
-  - http/1.1
+- name: FR_hysteria_91
+  type: hysteria
+  server: 51.159.111.32
+  port: 23880
+  auth-str: dongtaiwang.com
+  sni: bing.com
   skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: FR_hy_0
   type: hysteria
   server: 195.154.200.40
@@ -426,8 +424,8 @@ proxies:
 - name: NL_hy_2
   type: hysteria
   server: 51.159.226.1
-  port: 49003
-  ports: 49003
+  port: 14241
+  ports: 14241
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -437,11 +435,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: NL_hy_3
+- name: US_hy_3
   type: hysteria
-  server: 51.159.226.1
-  port: 49003
-  ports: 49003
+  server: 208.87.243.187
+  port: 15823
+  ports: 15823
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -451,23 +449,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: US_hy2_0
-  type: hysteria2
-  server: 208.87.243.187
-  port: 22222
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: FR_hy2_1
-  type: hysteria2
-  server: 62.210.10.140
-  port: 33224
-  password: dongtaiwang.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
-- name: FR_hy2_2
+- name: FR_hy2_0
   type: hysteria2
   server: 51.159.111.32
   port: 5355
@@ -475,15 +457,15 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: NL_hy2_3
+- name: US_hy2_1
   type: hysteria2
-  server: 51.158.218.2
-  port: 50066
+  server: 208.87.243.187
+  port: 22222
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: FR_hy2_4
+- name: FR_hy2_2
   type: hysteria2
   server: 62.210.10.140
   port: 33224
@@ -491,7 +473,7 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: NL_hy2_5
+- name: NL_hy2_3
   type: hysteria2
   server: 51.158.218.2
   port: 50066
@@ -528,17 +510,15 @@ proxy-groups:
   - -_tuic_65
   - FR_hysteria_71
   - FR_hysteria_81
-  - TW_anytls_91
+  - FR_hysteria_91
   - FR_hy_0
   - FR_hy_1
   - NL_hy_2
-  - NL_hy_3
-  - US_hy2_0
-  - FR_hy2_1
+  - US_hy_3
+  - FR_hy2_0
+  - US_hy2_1
   - FR_hy2_2
   - NL_hy2_3
-  - FR_hy2_4
-  - NL_hy2_5
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
