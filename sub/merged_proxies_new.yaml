@@ -139,19 +139,18 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: -_tuic_21
-  server: 2001:bc8:32d7:312::2
-  port: 23556
-  type: tuic
-  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
-  password: dongtaiwang.com
+- name: FR_hysteria_21
+  type: hysteria
+  server: 62.210.10.140
+  port: 42248
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: -_vless_31
   type: vless
   server: 2001:bc8:32d7:158::5
@@ -460,6 +459,14 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
+- name: FR_hy2_1
+  type: hysteria2
+  server: 62.210.10.140
+  port: 33224
+  password: dongtaiwang.com
+  fast-open: true
+  sni: apple.com
+  skip-cert-verify: true
 - name: FR_hy2_2
   type: hysteria2
   server: 51.159.111.32
@@ -475,6 +482,14 @@ proxies:
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
+  skip-cert-verify: true
+- name: FR_hy2_4
+  type: hysteria2
+  server: 62.210.10.140
+  port: 33224
+  password: dongtaiwang.com
+  fast-open: true
+  sni: apple.com
   skip-cert-verify: true
 - name: NL_hy2_5
   type: hysteria2
@@ -508,7 +523,7 @@ proxy-groups:
   - -_hysteria_04
   - -_hysteria_05
   - FR_tuic_11
-  - -_tuic_21
+  - FR_hysteria_21
   - -_vless_31
   - -_tuic_41
   - -_tuic_42
@@ -533,8 +548,10 @@ proxy-groups:
   - NL_hy_2
   - NL_hy_3
   - US_hy2_0
+  - FR_hy2_1
   - FR_hy2_2
   - NL_hy2_3
+  - FR_hy2_4
   - NL_hy2_5
   - -_reality_3
 rules:
