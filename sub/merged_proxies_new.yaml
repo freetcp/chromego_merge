@@ -499,20 +499,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: -_reality_3
-  type: vless
-  server: 2001:bc8:32d7:302::15
-  port: 34324
-  uuid: 26c462ba-a90c-4814-9d7c-a629bc0bdb5c
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: dash.cloudflare.com
-  reality-opts:
-    public-key: pHn5CHa2P6-lNBIkTOI3zJQN19jfNFkXxGFuyefpP0M
-    short-id: ''
 proxy-groups:
 - name: 节点选择
   type: select
@@ -553,7 +539,6 @@ proxy-groups:
   - NL_hy2_3
   - FR_hy2_4
   - NL_hy2_5
-  - -_reality_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
