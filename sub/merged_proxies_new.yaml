@@ -465,14 +465,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: FR_hy2_2
-  type: hysteria2
-  server: 62.210.10.140
-  port: 33224
-  password: dongtaiwang.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
 - name: NL_hy2_3
   type: hysteria2
   server: 51.158.218.2
@@ -517,7 +509,6 @@ proxy-groups:
   - US_hy_3
   - FR_hy2_0
   - US_hy2_1
-  - FR_hy2_2
   - NL_hy2_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
