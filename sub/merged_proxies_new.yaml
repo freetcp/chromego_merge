@@ -357,10 +357,10 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: FR_hysteria_71
+- name: US_hysteria_71
   type: hysteria
-  server: 62.210.10.113
-  port: 13767
+  server: 208.87.243.151
+  port: 10023
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -500,7 +500,7 @@ proxy-groups:
   - -_tuic_63
   - -_tuic_64
   - -_tuic_65
-  - FR_hysteria_71
+  - US_hysteria_71
   - FR_hysteria_81
   - FR_hysteria_91
   - FR_hy_0
