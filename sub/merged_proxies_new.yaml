@@ -371,7 +371,7 @@ proxies:
   down: 55 Mbps
 - name: FR_hysteria_81
   type: hysteria
-  server: 51.159.111.32
+  server: 163.172.21.105
   port: 23880
   auth-str: dongtaiwang.com
   sni: bing.com
@@ -383,7 +383,7 @@ proxies:
   down: 55 Mbps
 - name: FR_hysteria_91
   type: hysteria
-  server: 51.159.111.32
+  server: 163.172.21.105
   port: 23880
   auth-str: dongtaiwang.com
   sni: bing.com
@@ -435,11 +435,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: US_hy_3
+- name: INVALID IP ADDRESS_hy_3
   type: hysteria
-  server: 208.87.243.187
-  port: 15823
-  ports: 15823
+  server: '[2604'
+  port: 6600
+  ports: 6600
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -451,16 +451,16 @@ proxies:
   - h3
 - name: FR_hy2_0
   type: hysteria2
-  server: 51.159.111.32
+  server: 163.172.21.105
   port: 5355
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: US_hy2_1
+- name: INVALID IP ADDRESS_hy2_1
   type: hysteria2
-  server: 208.87.243.187
-  port: 22222
+  server: '[2604'
+  port: 6600
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -506,9 +506,9 @@ proxy-groups:
   - FR_hy_0
   - FR_hy_1
   - NL_hy_2
-  - US_hy_3
+  - INVALID IP ADDRESS_hy_3
   - FR_hy2_0
-  - US_hy2_1
+  - INVALID IP ADDRESS_hy2_1
   - NL_hy2_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
