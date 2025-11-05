@@ -487,7 +487,7 @@ proxies:
   - h3
 - name: FR_hy_1
   type: hysteria
-  server: 62.210.127.217
+  server: 62.210.10.186
   port: 40099
   ports: 40099
   auth_str: dongtaiwang.com
