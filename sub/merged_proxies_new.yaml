@@ -385,19 +385,20 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: -_tuic_122
-  server: 2001:bc8:32d7:306::123
-  port: 33998
-  type: tuic
-  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
+- name: TW_anytls_122
+  type: anytls
+  server: fan3.394615.xyz
+  port: 8443
   password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
   alpn:
-  - h3
-  sni: bing.com
+  - h2
+  - http/1.1
   skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
 - name: -_tuic_123
   server: 2001:bc8:32d7:306::124
   port: 33998
@@ -547,7 +548,7 @@ proxy-groups:
   - -_hysteria_114
   - -_hysteria_115
   - FR_tuic_121
-  - -_tuic_122
+  - TW_anytls_122
   - -_tuic_123
   - -_tuic_124
   - -_tuic_125
