@@ -202,19 +202,20 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: FR_tuic_71
+- name: FR_anytls_71
+  type: anytls
   server: 62.210.10.140
-  port: 23556
-  type: tuic
-  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
+  port: 8443
   password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
   alpn:
-  - h3
-  sni: bing.com
+  - h2
+  - http/1.1
   skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
 - name: FR_hysteria_81
   type: hysteria
   server: 62.210.10.140
@@ -529,7 +530,7 @@ proxy-groups:
   - -_hysteria_63
   - -_hysteria_64
   - -_hysteria_65
-  - FR_tuic_71
+  - FR_anytls_71
   - FR_hysteria_81
   - -_vless_91
   - -_tuic_101
