@@ -144,7 +144,7 @@ proxies:
   down: 55 Mbps
 - name: FR_tuic_61
   server: 51.159.107.20
-  port: 10088
+  port: 55255
   type: tuic
   uuid: 79529c4a-4028-4701-a6d6-4e94b78b50fd
   password: dongtaiwang.com
@@ -169,9 +169,9 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: -_hysteria_63
+- name: FR_hysteria_63
   type: hysteria
-  server: 2001:bc8:1203:25::2
+  server: 51.159.107.20
   port: 20001
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -450,9 +450,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: FR_hysteria_141
+- name: -_hysteria_141
   type: hysteria
-  server: 163.172.21.105
+  server: 2001:bc8:1203:106::16
   port: 23880
   auth-str: dongtaiwang.com
   sni: bing.com
@@ -531,7 +531,7 @@ proxy-groups:
   - -_hysteria2_51
   - FR_tuic_61
   - FR_anytls_62
-  - -_hysteria_63
+  - FR_hysteria_63
   - -_hysteria_64
   - -_hysteria_65
   - FR_anytls_71
@@ -553,7 +553,7 @@ proxy-groups:
   - -_tuic_124
   - -_tuic_125
   - US_hysteria_131
-  - FR_hysteria_141
+  - -_hysteria_141
   - TW_anytls_151
   - FR_hy_0
   - FR_hy_1
