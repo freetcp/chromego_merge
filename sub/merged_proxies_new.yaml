@@ -80,6 +80,13 @@ proxies:
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
+- name: US_mieru_03
+  type: mieru
+  server: 45.145.75.219
+  port: 55778
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
 - name: -_hysteria_11
   type: hysteria
   server: 2001:bc8:32d7:17b::2
@@ -592,6 +599,7 @@ proxy-groups:
   proxies:
   - HK_mieru_01
   - ZA_mieru_02
+  - US_mieru_03
   - -_hysteria_11
   - -_tuic_21
   - -_hysteria_31
