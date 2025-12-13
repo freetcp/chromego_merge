@@ -466,11 +466,11 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: DE_hy_0
+- name: FR_hy_0
   type: hysteria
-  server: 5.83.129.248
-  port: 10023
-  ports: 10023
+  server: 51.159.107.20
+  port: 40121
+  ports: 40121
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -480,11 +480,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: DE_hy_1
+- name: FR_hy_1
   type: hysteria
-  server: 5.83.129.248
-  port: 56701
-  ports: 56701
+  server: 51.159.107.20
+  port: 40121
+  ports: 40121
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -540,8 +540,8 @@ proxy-groups:
   - US_hysteria_131
   - -_hysteria_141
   - TW_anytls_151
-  - DE_hy_0
-  - DE_hy_1
+  - FR_hy_0
+  - FR_hy_1
   - FR_hy_2
 rules:
 - DOMAIN,clash.razord.top,DIRECT
