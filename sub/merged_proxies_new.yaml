@@ -324,24 +324,24 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: NL_tuic_101
-  server: 51.158.194.63
-  port: 29522
+- name: DE_tuic_101
+  server: 89.144.35.231
+  port: 33457
   type: tuic
-  uuid: b7dd1167-c5d9-45b9-ab75-83cd9e635537
+  uuid: 66d37a65-7f6f-4e7c-a0f6-163bd917756a
   password: dongtaiwang.com
   alpn:
   - h3
-  sni: www.microsoft.com
+  sni: apple.com
   skip-cert-verify: true
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
 - name: INVALID IP ADDRESS_tuic_102
-  server: 2a14:7583:2963::6e
-  port: 18899
+  server: 2a14:7583:299d::a
+  port: 33457
   type: tuic
-  uuid: 186a249b-5bc1-48b0-b922-534d5639ccf7
+  uuid: 66d37a65-7f6f-4e7c-a0f6-163bd917756a
   password: dongtaiwang.com
   alpn:
   - h3
@@ -529,7 +529,7 @@ proxy-groups:
   - -_vless_82
   - -_vless_83
   - INVALID IP ADDRESS_vless_91
-  - NL_tuic_101
+  - DE_tuic_101
   - INVALID IP ADDRESS_tuic_102
   - -_hysteria_111
   - FR_tuic_121
