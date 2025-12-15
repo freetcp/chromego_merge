@@ -66,20 +66,6 @@ dns:
     - tls://dns.google
     - tls://cloudflare-dns.com
 proxies:
-- name: ZA_mieru_01
-  type: mieru
-  server: 45.221.98.11
-  port: 28866
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
-- name: US_mieru_02
-  type: mieru
-  server: 45.145.75.219
-  port: 55778
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
 - name: -_hysteria_11
   type: hysteria
   server: 2001:bc8:32d7:17b::2
@@ -142,16 +128,15 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: FR_hysteria_61
-  type: hysteria
-  server: ipv4-2.758733.xyz
-  port: 30077
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: NL_hysteria2_61
+  type: hysteria2
+  server: 51.158.194.63
+  port: 32952
+  password: dongtaiwang.com
   alpn:
   - h3
-  protocol: udp
+  sni: www.microsoft.com
+  skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
 - name: FR_vless_62
@@ -512,14 +497,12 @@ proxy-groups:
 - name: 节点选择
   type: select
   proxies:
-  - ZA_mieru_01
-  - US_mieru_02
   - -_hysteria_11
   - -_tuic_21
   - -_hysteria_31
   - -_tuic_41
   - -_hysteria_51
-  - FR_hysteria_61
+  - NL_hysteria2_61
   - FR_vless_62
   - FR_hysteria_63
   - -_hysteria_64
