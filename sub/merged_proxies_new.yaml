@@ -128,15 +128,16 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: NL_hysteria2_61
-  type: hysteria2
-  server: 51.158.194.63
-  port: 32952
-  password: dongtaiwang.com
+- name: GB_hysteria_61
+  type: hysteria
+  server: 5.178.101.33
+  port: 23008
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: www.microsoft.com
-  skip-cert-verify: true
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: FR_vless_62
@@ -502,7 +503,7 @@ proxy-groups:
   - -_hysteria_31
   - -_tuic_41
   - -_hysteria_51
-  - NL_hysteria2_61
+  - GB_hysteria_61
   - FR_vless_62
   - FR_hysteria_63
   - -_hysteria_64
