@@ -65,11 +65,27 @@ dns:
     geosite:!cn,!private:
     - tls://dns.google
     - tls://cloudflare-dns.com
-proxies: []
+proxies:
+- name: HK_mieru_01
+  type: mieru
+  server: 175.29.23.246
+  port: 28231
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+- name: ZA_mieru_02
+  type: mieru
+  server: 45.221.98.11
+  port: 28866
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
 proxy-groups:
 - name: 节点选择
   type: select
-  proxies: []
+  proxies:
+  - HK_mieru_01
+  - ZA_mieru_02
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
