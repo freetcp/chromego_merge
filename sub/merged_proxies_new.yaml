@@ -383,6 +383,18 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
+- name: US_hysteria_101
+  type: hysteria
+  server: 208.87.243.151
+  port: 10023
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: -_hysteria_111
   type: hysteria
   server: 2001:bc8:32d7:14f::4
@@ -502,6 +514,7 @@ proxy-groups:
   - -_tuic_93
   - -_tuic_94
   - -_tuic_95
+  - US_hysteria_101
   - -_hysteria_111
   - -_hysteria_121
   - FR_hysteria_131
