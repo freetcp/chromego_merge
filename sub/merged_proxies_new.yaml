@@ -262,30 +262,13 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: -_vless_61
-  type: vless
-  server: 2001:bc8:32d7:1cb::10
-  port: 12618
-  uuid: 582d6615-b8a3-4674-96c1-5b087563b091
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Y3mEtIPC1rjwUrwJ4UsqX6QeZnJUoBN6hG2rRSQx4Rw
-    short-id: 8c4e4d7198e3631c
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 50
-      down: 100
+- name: US_mieru_61
+  type: mieru
+  server: 157.254.223.48
+  port: 33990
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
 - name: DE_tuic_71
   server: 89.144.35.231
   port: 33457
@@ -438,20 +421,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: INVALID IP ADDRESS_hy_0
-  type: hysteria
-  server: '[2604'
-  port: 6600
-  ports: 6600
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: GB_hy_1
   type: hysteria
   server: 5.178.101.106
@@ -513,7 +482,7 @@ proxy-groups:
   - FR_vless_51
   - -_vless_52
   - -_vless_53
-  - -_vless_61
+  - US_mieru_61
   - DE_tuic_71
   - INVALID IP ADDRESS_tuic_72
   - -_hysteria_81
@@ -526,7 +495,6 @@ proxy-groups:
   - -_hysteria_111
   - -_hysteria_121
   - FR_hysteria_131
-  - INVALID IP ADDRESS_hy_0
   - GB_hy_1
   - FR_hy_2
   - US_hy2_0
