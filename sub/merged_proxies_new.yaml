@@ -104,7 +104,19 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: GB_hysteria_31
+- name: DE_hysteria_31
+  type: hysteria
+  server: 89.144.35.30
+  port: 23008
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: GB_hysteria_32
   type: hysteria
   server: 5.178.101.33
   port: 23008
@@ -116,7 +128,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: FR_vless_32
+- name: FR_vless_33
   type: vless
   server: 195.154.200.13
   port: 17401
@@ -140,18 +152,6 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: FR_hysteria_33
-  type: hysteria
-  server: ipv4.758733.xyz
-  port: 20001
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: -_hysteria_34
   type: hysteria
   server: 2001:bc8:32d7:402::3
@@ -473,9 +473,9 @@ proxy-groups:
   - US_mieru_02
   - -_hysteria2_11
   - -_hysteria_21
-  - GB_hysteria_31
-  - FR_vless_32
-  - FR_hysteria_33
+  - DE_hysteria_31
+  - GB_hysteria_32
+  - FR_vless_33
   - -_hysteria_34
   - -_hysteria_35
   - ZA_anytls_41
