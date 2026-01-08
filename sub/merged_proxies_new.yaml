@@ -403,9 +403,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: -_hysteria_121
+- name: INVALID IP ADDRESS_hysteria_121
   type: hysteria
-  server: 2001:bc8:32d7:902::3
+  server: 2a14:7584:d099::a
   port: 26691
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -415,9 +415,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: FR_hysteria_131
+- name: DE_hysteria_131
   type: hysteria
-  server: 62.210.196.68
+  server: 5.83.129.143
   port: 26691
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -499,8 +499,8 @@ proxy-groups:
   - -_hysteria_95
   - US_hysteria_101
   - INVALID IP ADDRESS_hysteria_111
-  - -_hysteria_121
-  - FR_hysteria_131
+  - INVALID IP ADDRESS_hysteria_121
+  - DE_hysteria_131
   - DE_hy_1
   - DE_hy_2
   - US_hy2_0
