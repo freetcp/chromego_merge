@@ -429,9 +429,9 @@ proxies:
   down: 55 Mbps
 - name: DE_hy_1
   type: hysteria
-  server: 89.144.35.34
-  port: 39228
-  ports: 39228
+  server: 5.83.129.153
+  port: 20088
+  ports: 20088
   auth_str: dongtaiwang.com
   up: 80
   down: 100
