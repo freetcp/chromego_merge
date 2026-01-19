@@ -307,16 +307,16 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: DE_hysteria_91
-  type: hysteria
-  server: 89.144.35.30
-  port: 23008
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: US_hysteria2_91
+  type: hysteria2
+  server: 157.254.223.24
+  port: 30088
+  ports: 31000-32000
+  password: alvin9999.com
   alpn:
   - h3
-  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
 - name: GB_hysteria_92
@@ -492,7 +492,7 @@ proxy-groups:
   - DE_tuic_71
   - INVALID IP ADDRESS_tuic_72
   - INVALID IP ADDRESS_hysteria_81
-  - DE_hysteria_91
+  - US_hysteria2_91
   - GB_hysteria_92
   - FR_vless_93
   - -_hysteria_94
