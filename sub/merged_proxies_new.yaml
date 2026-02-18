@@ -293,16 +293,16 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: US_hysteria2_91
-  type: hysteria2
-  server: 157.254.223.24
-  port: 30088
-  ports: 31000-32000
-  password: alvin9999.com
-  alpn:
-  - h3
+- name: DE_hysteria_91
+  type: hysteria
+  server: ip1.758733.xyz
+  port: 23008
+  auth-str: alvin9999.com
   sni: apple.com
   skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: GB_hysteria_92
@@ -441,10 +441,10 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: US_hy2_0
+- name: DE_hy2_0
   type: hysteria2
-  server: 157.254.223.43
-  port: 27921
+  server: 89.144.35.34
+  port: 50022
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -477,7 +477,7 @@ proxy-groups:
   - US_mieru_61
   - INVALID IP ADDRESS_hysteria_71
   - INVALID IP ADDRESS_hysteria_81
-  - US_hysteria2_91
+  - DE_hysteria_91
   - GB_hysteria_92
   - FR_vless_93
   - -_hysteria_94
@@ -488,7 +488,7 @@ proxy-groups:
   - DE_hysteria_131
   - DE_hy_1
   - DE_hy_2
-  - US_hy2_0
+  - DE_hy2_0
   - FR_hy2_1
 rules:
 - DOMAIN,clash.razord.top,DIRECT
