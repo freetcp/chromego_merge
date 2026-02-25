@@ -438,7 +438,21 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: INVALID IP ADDRESS_hysteria_111
+- name: HK_anytls_111
+  type: anytls
+  server: 151.242.183.75
+  port: 33333
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: INVALID IP ADDRESS_hysteria_112
   type: hysteria
   server: 2a14:7584:d097::a
   port: 54177
@@ -544,7 +558,8 @@ proxy-groups:
   - -_vless_94
   - -_vless_95
   - US_hysteria_101
-  - INVALID IP ADDRESS_hysteria_111
+  - HK_anytls_111
+  - INVALID IP ADDRESS_hysteria_112
   - INVALID IP ADDRESS_hysteria_121
   - DE_hysteria_131
   - DE_hy_1
