@@ -111,31 +111,7 @@ proxies:
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: INVALID IP ADDRESS_hysteria_41
-  type: hysteria
-  server: 2a14:7584:d097::a
-  port: 54177
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: INVALID IP ADDRESS_hysteria_51
-  type: hysteria
-  server: 2a14:7584:d097::a
-  port: 54177
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: DE_hysteria_61
+- name: DE_hysteria_41
   type: hysteria
   server: ip1.758733.xyz
   port: 23008
@@ -147,7 +123,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: -_vless_62
+- name: -_vless_42
   type: vless
   server: 2001:bc8:32d7:181::2
   port: 17401
@@ -171,7 +147,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: -_vless_63
+- name: -_vless_43
   type: vless
   server: 2001:bc8:32d7:181::3
   port: 17401
@@ -195,7 +171,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: -_vless_64
+- name: -_vless_44
   type: vless
   server: 2001:bc8:32d7:181::4
   port: 17401
@@ -219,7 +195,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: -_vless_65
+- name: -_vless_45
   type: vless
   server: 2001:bc8:32d7:181::5
   port: 17401
@@ -243,7 +219,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: US_hysteria_71
+- name: US_hysteria_51
   type: hysteria
   server: 208.87.243.151
   port: 10023
@@ -255,7 +231,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: HK_anytls_81
+- name: HK_anytls_61
   type: anytls
   server: 151.242.183.75
   port: 33333
@@ -269,7 +245,7 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: INVALID IP ADDRESS_hysteria_82
+- name: INVALID IP ADDRESS_hysteria_62
   type: hysteria
   server: 2a14:7584:d097::a
   port: 54177
@@ -281,7 +257,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: INVALID IP ADDRESS_hysteria_91
+- name: INVALID IP ADDRESS_hysteria_71
   type: hysteria
   server: 2a14:7584:d099::a
   port: 26691
@@ -293,7 +269,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: DE_hysteria_101
+- name: DE_hysteria_81
   type: hysteria
   server: 5.83.129.143
   port: 26691
@@ -357,18 +333,16 @@ proxy-groups:
   - -_hysteria_11
   - ZA_anytls_21
   - US_mieru_31
-  - INVALID IP ADDRESS_hysteria_41
-  - INVALID IP ADDRESS_hysteria_51
-  - DE_hysteria_61
-  - -_vless_62
-  - -_vless_63
-  - -_vless_64
-  - -_vless_65
-  - US_hysteria_71
-  - HK_anytls_81
-  - INVALID IP ADDRESS_hysteria_82
-  - INVALID IP ADDRESS_hysteria_91
-  - DE_hysteria_101
+  - DE_hysteria_41
+  - -_vless_42
+  - -_vless_43
+  - -_vless_44
+  - -_vless_45
+  - US_hysteria_51
+  - HK_anytls_61
+  - INVALID IP ADDRESS_hysteria_62
+  - INVALID IP ADDRESS_hysteria_71
+  - DE_hysteria_81
   - DE_hy_1
   - DE_hy_2
   - DE_hy2_0
