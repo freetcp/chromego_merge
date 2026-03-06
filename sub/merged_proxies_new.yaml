@@ -219,19 +219,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: US_hysteria_51
-  type: hysteria
-  server: 208.87.243.151
-  port: 10023
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: HK_anytls_61
+- name: HK_anytls_51
   type: anytls
   server: 151.242.183.75
   port: 33333
@@ -245,7 +233,7 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: INVALID IP ADDRESS_hysteria_62
+- name: INVALID IP ADDRESS_hysteria_52
   type: hysteria
   server: 2a14:7584:d097::a
   port: 54177
@@ -257,6 +245,20 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: TW_anytls_61
+  type: anytls
+  server: fan2.856098.xyz
+  port: 8443
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
 - name: INVALID IP ADDRESS_hysteria_71
   type: hysteria
   server: 2a14:7584:d099::a
@@ -338,9 +340,9 @@ proxy-groups:
   - -_vless_43
   - -_vless_44
   - -_vless_45
-  - US_hysteria_51
-  - HK_anytls_61
-  - INVALID IP ADDRESS_hysteria_62
+  - HK_anytls_51
+  - INVALID IP ADDRESS_hysteria_52
+  - TW_anytls_61
   - INVALID IP ADDRESS_hysteria_71
   - DE_hysteria_81
   - DE_hy_1
