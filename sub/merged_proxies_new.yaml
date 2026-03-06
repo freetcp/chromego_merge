@@ -66,21 +66,7 @@ dns:
     - tls://dns.google
     - tls://cloudflare-dns.com
 proxies:
-- name: US_mieru_01
-  type: mieru
-  server: 173.234.25.51
-  port: 44444
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
-- name: US_mieru_02
-  type: mieru
-  server: 157.254.223.48
-  port: 33990
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
-- name: -_hysteria2_11
+- name: -_hysteria2_01
   type: hysteria2
   server: 2001:bc8:32d7:302::17
   port: 20088
@@ -92,7 +78,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: -_hysteria_21
+- name: -_hysteria_11
   type: hysteria
   server: 2001:bc8:32d7:17b::2
   port: 11000
@@ -104,7 +90,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: DE_tuic_31
+- name: DE_tuic_21
   server: ip1.758733.xyz
   port: 10088
   type: tuic
@@ -117,7 +103,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: DE_hysteria_32
+- name: DE_hysteria_22
   type: hysteria
   server: ip1.758733.xyz
   port: 23008
@@ -129,7 +115,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: -_vless_33
+- name: -_vless_23
   type: vless
   server: 2001:bc8:32d7:181::3
   port: 17401
@@ -153,7 +139,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: -_vless_34
+- name: -_vless_24
   type: vless
   server: 2001:bc8:32d7:181::4
   port: 17401
@@ -177,7 +163,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: -_vless_35
+- name: -_vless_25
   type: vless
   server: 2001:bc8:32d7:181::5
   port: 17401
@@ -201,7 +187,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: ZA_anytls_41
+- name: ZA_anytls_31
   type: anytls
   server: 45.221.98.14
   port: 59901
@@ -215,7 +201,7 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: -_vless_51
+- name: -_vless_41
   type: vless
   server: 2001:bc8:32d7:181::3
   port: 17401
@@ -239,7 +225,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: -_vless_52
+- name: -_vless_42
   type: vless
   server: 2001:bc8:32d7:181::2
   port: 17401
@@ -263,7 +249,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: -_vless_53
+- name: -_vless_43
   type: vless
   server: 2001:bc8:32d7:181::3
   port: 17401
@@ -287,13 +273,25 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: US_mieru_61
+- name: US_mieru_51
   type: mieru
   server: 157.254.223.48
   port: 33990
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
+- name: INVALID IP ADDRESS_hysteria_61
+  type: hysteria
+  server: 2a14:7584:d097::a
+  port: 54177
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: INVALID IP ADDRESS_hysteria_71
   type: hysteria
   server: 2a14:7584:d097::a
@@ -306,19 +304,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: INVALID IP ADDRESS_hysteria_81
-  type: hysteria
-  server: 2a14:7584:d097::a
-  port: 54177
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: DE_hysteria_91
+- name: DE_hysteria_81
   type: hysteria
   server: ip1.758733.xyz
   port: 23008
@@ -330,7 +316,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: -_vless_92
+- name: -_vless_82
   type: vless
   server: 2001:bc8:32d7:181::2
   port: 17401
@@ -354,7 +340,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: -_vless_93
+- name: -_vless_83
   type: vless
   server: 2001:bc8:32d7:181::3
   port: 17401
@@ -378,7 +364,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: -_vless_94
+- name: -_vless_84
   type: vless
   server: 2001:bc8:32d7:181::4
   port: 17401
@@ -402,7 +388,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: -_vless_95
+- name: -_vless_85
   type: vless
   server: 2001:bc8:32d7:181::5
   port: 17401
@@ -426,7 +412,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: US_hysteria_101
+- name: US_hysteria_91
   type: hysteria
   server: 208.87.243.151
   port: 10023
@@ -438,7 +424,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: HK_anytls_111
+- name: HK_anytls_101
   type: anytls
   server: 151.242.183.75
   port: 33333
@@ -452,7 +438,7 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: INVALID IP ADDRESS_hysteria_112
+- name: INVALID IP ADDRESS_hysteria_102
   type: hysteria
   server: 2a14:7584:d097::a
   port: 54177
@@ -464,7 +450,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: INVALID IP ADDRESS_hysteria_121
+- name: INVALID IP ADDRESS_hysteria_111
   type: hysteria
   server: 2a14:7584:d099::a
   port: 26691
@@ -476,7 +462,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: DE_hysteria_131
+- name: DE_hysteria_121
   type: hysteria
   server: 5.83.129.143
   port: 26691
@@ -536,32 +522,30 @@ proxy-groups:
 - name: 节点选择
   type: select
   proxies:
-  - US_mieru_01
-  - US_mieru_02
-  - -_hysteria2_11
-  - -_hysteria_21
-  - DE_tuic_31
-  - DE_hysteria_32
-  - -_vless_33
-  - -_vless_34
-  - -_vless_35
-  - ZA_anytls_41
-  - -_vless_51
-  - -_vless_52
-  - -_vless_53
-  - US_mieru_61
+  - -_hysteria2_01
+  - -_hysteria_11
+  - DE_tuic_21
+  - DE_hysteria_22
+  - -_vless_23
+  - -_vless_24
+  - -_vless_25
+  - ZA_anytls_31
+  - -_vless_41
+  - -_vless_42
+  - -_vless_43
+  - US_mieru_51
+  - INVALID IP ADDRESS_hysteria_61
   - INVALID IP ADDRESS_hysteria_71
-  - INVALID IP ADDRESS_hysteria_81
-  - DE_hysteria_91
-  - -_vless_92
-  - -_vless_93
-  - -_vless_94
-  - -_vless_95
-  - US_hysteria_101
-  - HK_anytls_111
-  - INVALID IP ADDRESS_hysteria_112
-  - INVALID IP ADDRESS_hysteria_121
-  - DE_hysteria_131
+  - DE_hysteria_81
+  - -_vless_82
+  - -_vless_83
+  - -_vless_84
+  - -_vless_85
+  - US_hysteria_91
+  - HK_anytls_101
+  - INVALID IP ADDRESS_hysteria_102
+  - INVALID IP ADDRESS_hysteria_111
+  - DE_hysteria_121
   - DE_hy_1
   - DE_hy_2
   - DE_hy2_0
