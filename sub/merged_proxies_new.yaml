@@ -104,13 +104,19 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: US_mieru_31
-  type: mieru
+- name: US_tuic_31
   server: 157.254.223.48
-  port: 33990
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
+  port: 11540
+  type: tuic
+  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  sni: www.microsoft.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: DE_hysteria_41
   type: hysteria
   server: ip1.758733.xyz
@@ -311,21 +317,13 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: DE_hy2_0
+- name: US_hy2_0
   type: hysteria2
-  server: 89.144.35.34
-  port: 43608
+  server: 157.254.223.43
+  port: 27921
   password: dongtaiwang.com
   fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
-- name: FR_hy2_1
-  type: hysteria2
-  server: 62.210.124.146
-  port: 22000
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.microsoft.com
+  sni: www.bing.com
   skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
@@ -334,7 +332,7 @@ proxy-groups:
   - -_hysteria2_01
   - -_hysteria_11
   - ZA_anytls_21
-  - US_mieru_31
+  - US_tuic_31
   - DE_hysteria_41
   - -_vless_42
   - -_vless_43
@@ -347,8 +345,7 @@ proxy-groups:
   - DE_hysteria_81
   - DE_hy_1
   - DE_hy_2
-  - DE_hy2_0
-  - FR_hy2_1
+  - US_hy2_0
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
