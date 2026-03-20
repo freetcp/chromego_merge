@@ -117,7 +117,14 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: GB_tuic_41
+- name: HK_mieru_41
+  type: mieru
+  server: 151.242.183.103
+  port: 23014
+  transport: TCP
+  username: tcp_3flnfpno
+  password: A4Hv3H5yb8meP1MN
+- name: GB_tuic_42
   server: 5.178.101.117
   port: 30006
   type: tuic
@@ -238,7 +245,8 @@ proxy-groups:
   - -_hysteria_11
   - ZA_anytls_21
   - US_tuic_31
-  - GB_tuic_41
+  - HK_mieru_41
+  - GB_tuic_42
   - HK_anytls_51
   - INVALID IP ADDRESS_hysteria_52
   - TW_anytls_61
