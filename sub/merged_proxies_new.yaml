@@ -66,7 +66,31 @@ dns:
     - tls://dns.google
     - tls://cloudflare-dns.com
 proxies:
-- name: -_hysteria2_01
+- name: DE_hysteria_01
+  type: hysteria
+  server: 5.83.129.143
+  port: 26691
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: INVALID IP ADDRESS_hysteria_11
+  type: hysteria
+  server: 2a14:7584:d099::a
+  port: 26691
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: -_hysteria2_21
   type: hysteria2
   server: 2001:bc8:32d7:302::17
   port: 20088
@@ -78,7 +102,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: -_hysteria_11
+- name: -_hysteria_31
   type: hysteria
   server: 2001:bc8:32d7:17b::2
   port: 11000
@@ -90,65 +114,14 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: ZA_anytls_21
-  type: anytls
-  server: 45.221.98.14
-  port: 59901
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
-  alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
-- name: US_tuic_31
-  server: 157.254.223.48
-  port: 11540
-  type: tuic
-  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-  sni: www.microsoft.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
-- name: INVALID IP ADDRESS_hysteria_41
-  type: hysteria
-  server: 2a14:7584:d097::a
-  port: 54177
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: INVALID IP ADDRESS_hysteria_51
-  type: hysteria
-  server: 2a14:7584:d097::a
-  port: 54177
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: HK_mieru_61
+- name: HK_mieru_41
   type: mieru
   server: 151.242.183.103
   port: 23014
   transport: TCP
   username: tcp_3flnfpno
   password: A4Hv3H5yb8meP1MN
-- name: GB_tuic_62
+- name: GB_tuic_42
   server: 5.178.101.117
   port: 30006
   type: tuic
@@ -161,20 +134,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: US_tuic_71
-  server: 157.254.223.48
-  port: 11540
-  type: tuic
-  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-  sni: www.microsoft.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
-- name: HK_anytls_81
+- name: HK_anytls_51
   type: anytls
   server: 151.242.183.75
   port: 33333
@@ -188,7 +148,7 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: INVALID IP ADDRESS_hysteria_82
+- name: INVALID IP ADDRESS_hysteria_52
   type: hysteria
   server: 2a14:7584:d097::a
   port: 54177
@@ -200,7 +160,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: TW_anytls_91
+- name: TW_anytls_61
   type: anytls
   server: fan2.856098.xyz
   port: 8443
@@ -214,30 +174,33 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: INVALID IP ADDRESS_hysteria_101
-  type: hysteria
-  server: 2a14:7584:d099::a
-  port: 26691
-  auth-str: dongtaiwang.com
-  sni: apple.com
+- name: ZA_anytls_71
+  type: anytls
+  server: 45.221.98.14
+  port: 59901
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
   skip-cert-verify: true
+- name: US_tuic_81
+  server: 157.254.223.48
+  port: 11540
+  type: tuic
+  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  sni: www.microsoft.com
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: DE_hysteria_111
-  type: hysteria
-  server: 5.83.129.143
-  port: 26691
-  auth-str: dongtaiwang.com
-  sni: apple.com
+  request-timeout: 8000
+  udp-relay-mode: native
   skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  congestion-controller: bbr
 - name: DE_hy_1
   type: hysteria
   server: 5.83.129.153
@@ -278,20 +241,17 @@ proxy-groups:
 - name: 节点选择
   type: select
   proxies:
-  - -_hysteria2_01
-  - -_hysteria_11
-  - ZA_anytls_21
-  - US_tuic_31
-  - INVALID IP ADDRESS_hysteria_41
-  - INVALID IP ADDRESS_hysteria_51
-  - HK_mieru_61
-  - GB_tuic_62
-  - US_tuic_71
-  - HK_anytls_81
-  - INVALID IP ADDRESS_hysteria_82
-  - TW_anytls_91
-  - INVALID IP ADDRESS_hysteria_101
-  - DE_hysteria_111
+  - DE_hysteria_01
+  - INVALID IP ADDRESS_hysteria_11
+  - -_hysteria2_21
+  - -_hysteria_31
+  - HK_mieru_41
+  - GB_tuic_42
+  - HK_anytls_51
+  - INVALID IP ADDRESS_hysteria_52
+  - TW_anytls_61
+  - ZA_anytls_71
+  - US_tuic_81
   - DE_hy_1
   - DE_hy_2
   - US_hy2_2
