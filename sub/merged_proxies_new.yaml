@@ -229,14 +229,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: US_hy2_2
-  type: hysteria2
-  server: 157.254.223.43
-  port: 27921
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -254,7 +246,6 @@ proxy-groups:
   - US_tuic_81
   - DE_hy_1
   - DE_hy_2
-  - US_hy2_2
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
