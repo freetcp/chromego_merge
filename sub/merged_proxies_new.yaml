@@ -200,11 +200,11 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: DE_hy_1
+- name: TW_hy_1
   type: hysteria
-  server: 5.83.129.153
-  port: 20088
-  ports: 20088
+  server: 111.243.102.83
+  port: 56385
+  ports: 56385
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -243,7 +243,7 @@ proxy-groups:
   - TW_anytls_61
   - US_tuic_71
   - US_tuic_81
-  - DE_hy_1
+  - TW_hy_1
   - DE_hy_2
 rules:
 - DOMAIN,clash.razord.top,DIRECT
