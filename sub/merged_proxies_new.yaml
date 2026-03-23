@@ -174,13 +174,13 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: US_tuic_71
-  server: 157.254.223.24
-  port: 41122
+- name: FR_tuic_71
+  server: 163.172.116.154
+  port: 33887
   type: tuic
-  uuid: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
-  password: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
-  sni: www.microsoft.com
+  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+  password: dongtaiwang.com
+  sni: bing.com
   alpn:
   - h3
   request-timeout: 8000
@@ -241,7 +241,7 @@ proxy-groups:
   - HK_anytls_51
   - INVALID IP ADDRESS_hysteria_52
   - TW_anytls_61
-  - US_tuic_71
+  - FR_tuic_71
   - US_tuic_81
   - TW_hy_1
   - DE_hy_2
