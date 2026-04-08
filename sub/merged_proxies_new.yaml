@@ -114,12 +114,12 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: HK_tuic_41
-  server: 151.242.183.103
-  port: 11882
+- name: DE_tuic_41
+  server: 83.243.86.103
+  port: 40676
   type: tuic
-  uuid: e473c549-4737-4236-8f6b-6840fd22a9d9
-  password: dongtaiwang.com
+  uuid: 06143eb5-a648-46b7-a92a-41683f612a10
+  password: 06143eb5-a648-46b7-a92a-41683f612a10
   sni: www.microsoft.com
   alpn:
   - h3
@@ -242,7 +242,7 @@ proxy-groups:
   - INVALID IP ADDRESS_hysteria_11
   - -_hysteria2_21
   - -_hysteria_31
-  - HK_tuic_41
+  - DE_tuic_41
   - GB_tuic_42
   - HK_anytls_51
   - INVALID IP ADDRESS_hysteria_52
