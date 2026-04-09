@@ -114,12 +114,12 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: DE_tuic_41
-  server: 83.243.86.103
-  port: 40676
+- name: HK_tuic_41
+  server: 151.242.183.103
+  port: 11882
   type: tuic
-  uuid: 06143eb5-a648-46b7-a92a-41683f612a10
-  password: 06143eb5-a648-46b7-a92a-41683f612a10
+  uuid: e473c549-4737-4236-8f6b-6840fd22a9d9
+  password: dongtaiwang.com
   sni: www.microsoft.com
   alpn:
   - h3
@@ -193,6 +193,19 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
+- name: GB_tuic_72
+  server: 5.178.101.117
+  port: 30006
+  type: tuic
+  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: GB_tuic_81
   server: 5.178.101.117
   port: 30006
@@ -242,12 +255,13 @@ proxy-groups:
   - INVALID IP ADDRESS_hysteria_11
   - -_hysteria2_21
   - -_hysteria_31
-  - DE_tuic_41
+  - HK_tuic_41
   - GB_tuic_42
   - HK_anytls_51
   - INVALID IP ADDRESS_hysteria_52
   - TW_anytls_61
   - FR_tuic_71
+  - GB_tuic_72
   - GB_tuic_81
   - DE_hy_1
   - DE_hy_2
