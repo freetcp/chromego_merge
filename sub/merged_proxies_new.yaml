@@ -141,13 +141,13 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: DE_tuic_51
-  server: 83.243.86.109
-  port: 27947
+- name: HK_tuic_51
+  server: 151.242.183.103
+  port: 11882
   type: tuic
-  uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2
-  password: 261d95d4-73c0-4c33-957a-04b6d407bea2
-  sni: bing.com
+  uuid: e473c549-4737-4236-8f6b-6840fd22a9d9
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   alpn:
   - h3
   request-timeout: 8000
@@ -283,7 +283,7 @@ proxy-groups:
   - -_hysteria_31
   - ZA_anytls_41
   - GB_tuic_42
-  - DE_tuic_51
+  - HK_tuic_51
   - TW_anytls_61
   - FR_tuic_71
   - FR_tuic_81
