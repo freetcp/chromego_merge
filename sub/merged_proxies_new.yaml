@@ -166,12 +166,12 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: US_tuic_91
-  server: 178.18.147.199
-  port: 42487
+- name: GB_tuic_91
+  server: 5.178.101.117
+  port: 30006
   type: tuic
-  uuid: b35b50d1-7830-4a68-94db-349c2d2f8e43
-  password: b35b50d1-7830-4a68-94db-349c2d2f8e43
+  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+  password: dongtaiwang.com
   sni: www.microsoft.com
   alpn:
   - h3
@@ -249,7 +249,7 @@ proxy-groups:
   - FR_tuic_71
   - FR_tuic_81
   - GB_tuic_82
-  - US_tuic_91
+  - GB_tuic_91
   - GB_tuic_101
   - INVALID IP ADDRESS_hysteria_111
   - DE_hy_1
@@ -271,7 +271,7 @@ proxy-groups:
   - FR_tuic_71
   - FR_tuic_81
   - GB_tuic_82
-  - US_tuic_91
+  - GB_tuic_91
   - GB_tuic_101
   - INVALID IP ADDRESS_hysteria_111
   - DE_hy_1
