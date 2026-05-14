@@ -140,32 +140,18 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: FR_tuic_81
-  server: 163.172.116.154
-  port: 33887
-  type: tuic
-  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
-  password: dongtaiwang.com
+- name: FR_hysteria_81
+  type: hysteria
+  server: 163.172.117.163
+  port: 36699
+  auth-str: dongtaiwang.com
   sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
-- name: GB_tuic_82
-  server: 5.178.101.117
-  port: 30006
-  type: tuic
-  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: GB_tuic_91
   server: 5.178.101.117
   port: 30006
@@ -247,8 +233,7 @@ proxy-groups:
   - DE_tuic_51
   - TW_anytls_61
   - FR_tuic_71
-  - FR_tuic_81
-  - GB_tuic_82
+  - FR_hysteria_81
   - GB_tuic_91
   - GB_tuic_101
   - INVALID IP ADDRESS_hysteria_111
@@ -269,8 +254,7 @@ proxy-groups:
   - DE_tuic_51
   - TW_anytls_61
   - FR_tuic_71
-  - FR_tuic_81
-  - GB_tuic_82
+  - FR_hysteria_81
   - GB_tuic_91
   - GB_tuic_101
   - INVALID IP ADDRESS_hysteria_111
