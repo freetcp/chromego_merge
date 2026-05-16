@@ -127,19 +127,18 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: FR_tuic_71
-  server: ip1.758733.xyz
-  port: 10088
-  type: tuic
-  uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
-  password: dongtaiwang.com
-  sni: apple.com
+- name: FR_hysteria_71
+  type: hysteria
+  server: 62.210.29.98
+  port: 10066
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: FR_hysteria_81
   type: hysteria
   server: 163.172.117.163
@@ -232,7 +231,7 @@ proxy-groups:
   - GB_tuic_42
   - DE_tuic_51
   - TW_anytls_61
-  - FR_tuic_71
+  - FR_hysteria_71
   - FR_hysteria_81
   - GB_tuic_91
   - GB_tuic_101
@@ -253,7 +252,7 @@ proxy-groups:
   - GB_tuic_42
   - DE_tuic_51
   - TW_anytls_61
-  - FR_tuic_71
+  - FR_hysteria_71
   - FR_hysteria_81
   - GB_tuic_91
   - GB_tuic_101
