@@ -127,16 +127,13 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: FR_hysteria_71
-  type: hysteria
-  server: 62.210.29.98
-  port: 10066
-  auth-str: github.com/Alvin9999-newpac/fanqiang
+- name: FR_hysteria2_71
+  type: hysteria2
+  server: 62.210.124.132
+  port: 64772
+  password: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
   skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: FR_hysteria_81
@@ -231,7 +228,7 @@ proxy-groups:
   - GB_tuic_42
   - DE_tuic_51
   - TW_anytls_61
-  - FR_hysteria_71
+  - FR_hysteria2_71
   - FR_hysteria_81
   - GB_tuic_91
   - GB_tuic_101
@@ -252,7 +249,7 @@ proxy-groups:
   - GB_tuic_42
   - DE_tuic_51
   - TW_anytls_61
-  - FR_hysteria_71
+  - FR_hysteria2_71
   - FR_hysteria_81
   - GB_tuic_91
   - GB_tuic_101
