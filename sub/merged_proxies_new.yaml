@@ -73,10 +73,10 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: ZA_anytls_41
+- name: US_anytls_41
   type: anytls
-  server: 45.221.98.11
-  port: 11777
+  server: 156.225.88.93
+  port: 23778
   password: dongtaiwang.com
   client-fingerprint: chrome
   udp: true
@@ -87,19 +87,6 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: GB_tuic_42
-  server: 5.178.101.117
-  port: 30006
-  type: tuic
-  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
 - name: DE_tuic_51
   server: 83.243.86.109
   port: 27947
@@ -224,8 +211,7 @@ proxy-groups:
   - INVALID IP ADDRESS_hysteria_11
   - -_hysteria2_21
   - -_hysteria_31
-  - ZA_anytls_41
-  - GB_tuic_42
+  - US_anytls_41
   - DE_tuic_51
   - TW_anytls_61
   - FR_hysteria2_71
@@ -245,8 +231,7 @@ proxy-groups:
   - INVALID IP ADDRESS_hysteria_11
   - -_hysteria2_21
   - -_hysteria_31
-  - ZA_anytls_41
-  - GB_tuic_42
+  - US_anytls_41
   - DE_tuic_51
   - TW_anytls_61
   - FR_hysteria2_71
