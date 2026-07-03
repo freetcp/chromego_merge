@@ -106,13 +106,16 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: FR_hysteria2_71
-  type: hysteria2
-  server: clash-ip1.934618.xyz
-  port: 18271
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: clash-ip1.934618.xyz
-  skip-cert-verify: false
+- name: FR_hysteria_71
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: FR_hysteria_81
@@ -167,15 +170,15 @@ proxies:
   down: 55 Mbps
 - name: DE_hy_1
   type: hysteria
-  server: 5.83.129.153
-  port: 27626
-  ports: 27626
-  auth_str: github.com/Alvin9999-newpac/fanqiang
+  server: 5.83.129.90
+  port: 54177
+  ports: 54177
+  auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -206,7 +209,7 @@ proxy-groups:
   - US_anytls_41
   - DE_tuic_51
   - TW_anytls_61
-  - FR_hysteria2_71
+  - FR_hysteria_71
   - FR_hysteria_81
   - GB_tuic_91
   - GB_tuic_101
@@ -226,7 +229,7 @@ proxy-groups:
   - US_anytls_41
   - DE_tuic_51
   - TW_anytls_61
-  - FR_hysteria2_71
+  - FR_hysteria_71
   - FR_hysteria_81
   - GB_tuic_91
   - GB_tuic_101
