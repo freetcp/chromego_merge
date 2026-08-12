@@ -88,20 +88,18 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   udp: true
   multiplexing: MULTIPLEXING_LOW
-- name: TW_anytls_61
-  type: anytls
-  server: fan2.856098.xyz
-  port: 8443
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
+- name: TW_hysteria_61
+  type: hysteria
+  server: tw-25.497489.xyz
+  port: 10099
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: tw-25.497489.xyz
+  skip-cert-verify: false
   alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
+  - h3
+  protocol: udp
+  up: 20 Mbps
+  down: 20 Mbps
 - name: FR_hysteria_71
   type: hysteria
   server: 62.210.70.191
@@ -202,7 +200,7 @@ proxy-groups:
   - -_hysteria_31
   - US_anytls_41
   - US_mieru_51
-  - TW_anytls_61
+  - TW_hysteria_61
   - FR_hysteria_71
   - FR_hysteria_81
   - FR_hysteria_91
@@ -222,7 +220,7 @@ proxy-groups:
   - -_hysteria_31
   - US_anytls_41
   - US_mieru_51
-  - TW_anytls_61
+  - TW_hysteria_61
   - FR_hysteria_71
   - FR_hysteria_81
   - FR_hysteria_91
