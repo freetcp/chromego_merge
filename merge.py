@@ -127,7 +127,7 @@ def process_clash(data, index):
                     ports = proxy.get("port", "")
                     protocol = proxy.get("protocol", "udp")
                     up_mbps = 50
-                    down_mbps = 80                   
+                    down_mbps = 200                   
                     alpn = proxy.get("alpn", [])[0] if proxy.get("alpn") and len(proxy["alpn"]) > 0 else None
                     obfs = proxy.get("obfs", "")
                     insecure = int(proxy.get("skip-cert-verify", 0))
