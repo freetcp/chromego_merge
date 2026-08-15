@@ -37,49 +37,25 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: INVALID IP ADDRESS_hysteria_11
-  type: hysteria
-  server: 2a14:7584:d099::a
-  port: 26691
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: -_hysteria2_21
-  type: hysteria2
-  server: 2001:bc8:32d7:302::17
-  port: 20088
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: -_hysteria_31
-  type: hysteria
-  server: 2001:bc8:32d7:17b::2
-  port: 11000
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: US_anytls_41
+- name: US_anytls_11
   type: anytls
   server: anytls2.864106.xyz
   port: 19000
   password: github.com/Alvin9999-newpac/fanqiang
   sni: anytls2.864106.xyz
-- name: US_mieru_51
+- name: US_hysteria_21
+  type: hysteria
+  server: 198.200.57.142
+  port: 22335
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: US_mieru_31
   type: mieru
   server: 198.200.57.152
   port: 33556
@@ -88,7 +64,7 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   udp: true
   multiplexing: MULTIPLEXING_LOW
-- name: TW_hysteria_61
+- name: TW_hysteria_41
   type: hysteria
   server: tw-25.497489.xyz
   port: 10099
@@ -100,6 +76,30 @@ proxies:
   protocol: udp
   up: 20 Mbps
   down: 20 Mbps
+- name: FR_hysteria_51
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: FR_hysteria_61
+  type: hysteria
+  server: 163.172.117.163
+  port: 36699
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: FR_hysteria_71
   type: hysteria
   server: 62.210.70.191
@@ -114,46 +114,10 @@ proxies:
   down: 55 Mbps
 - name: FR_hysteria_81
   type: hysteria
-  server: 163.172.117.163
-  port: 36699
-  auth-str: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: FR_hysteria_91
-  type: hysteria
   server: 62.210.70.191
   port: 23556
   auth-str: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: FR_hysteria_101
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: INVALID IP ADDRESS_hysteria_111
-  type: hysteria
-  server: 2a14:7584:d097::a
-  port: 54177
-  auth-str: dongtaiwang.com
-  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -195,17 +159,14 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - DE_hysteria_01
-  - INVALID IP ADDRESS_hysteria_11
-  - -_hysteria2_21
-  - -_hysteria_31
-  - US_anytls_41
-  - US_mieru_51
-  - TW_hysteria_61
+  - US_anytls_11
+  - US_hysteria_21
+  - US_mieru_31
+  - TW_hysteria_41
+  - FR_hysteria_51
+  - FR_hysteria_61
   - FR_hysteria_71
   - FR_hysteria_81
-  - FR_hysteria_91
-  - FR_hysteria_101
-  - INVALID IP ADDRESS_hysteria_111
   - FR_hy_1
   - DE_hy_2
 - name: 自动选择
@@ -215,17 +176,14 @@ proxy-groups:
   tolerance: 50
   proxies:
   - DE_hysteria_01
-  - INVALID IP ADDRESS_hysteria_11
-  - -_hysteria2_21
-  - -_hysteria_31
-  - US_anytls_41
-  - US_mieru_51
-  - TW_hysteria_61
+  - US_anytls_11
+  - US_hysteria_21
+  - US_mieru_31
+  - TW_hysteria_41
+  - FR_hysteria_51
+  - FR_hysteria_61
   - FR_hysteria_71
   - FR_hysteria_81
-  - FR_hysteria_91
-  - FR_hysteria_101
-  - INVALID IP ADDRESS_hysteria_111
   - FR_hy_1
   - DE_hy_2
 rules:
