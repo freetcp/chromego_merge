@@ -124,17 +124,17 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: FR_hy_1
+- name: US_hy_1
   type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  ports: 23556
-  auth_str: github.com/Alvin9999-newpac/fanqiang
+  server: 107.149.207.185
+  port: 443
+  ports: 443
+  auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -167,7 +167,7 @@ proxy-groups:
   - FR_hysteria_61
   - FR_hysteria_71
   - FR_hysteria_81
-  - FR_hy_1
+  - US_hy_1
   - DE_hy_2
 - name: 自动选择
   type: url-test
@@ -184,7 +184,7 @@ proxy-groups:
   - FR_hysteria_61
   - FR_hysteria_71
   - FR_hysteria_81
-  - FR_hy_1
+  - US_hy_1
   - DE_hy_2
 rules:
 - DOMAIN,clash.razord.top,DIRECT
