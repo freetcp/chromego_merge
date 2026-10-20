@@ -1,7 +1,7 @@
 import requests
 import os
 
-url = "https://raw.githubusercontent.com/freetcp/chromego_merge/refs/heads/main/sub/merged_proxies_new.yaml"
+url = "https://raw.githubusercontent.com/freetcp/chromego_merge/refs/heads/main/sub/base64.txt"
 output_folder = "sub"
 output_filename = "sing-box.json"
 
