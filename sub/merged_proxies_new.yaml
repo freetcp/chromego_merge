@@ -39,6 +39,28 @@ proxies:
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
+- name: United States_None_shadowquic_03
+  type: shadowquic
+  server: 198.2.214.27
+  port: 22448
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+  sni: www.bing.com
+  alpn:
+  - h3
+  zero-rtt: true
+  congestion-control: bbr
+- name: Unknown_shadowquic_04
+  type: shadowquic
+  server: 142.249.37.83
+  port: 1443
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+  sni: www.yahoo.com
+  alpn:
+  - h3
+  zero-rtt: true
+  congestion-control: bbr
 - name: Germany_None_hysteria_11
   type: hysteria
   server: 5.83.129.143
@@ -208,6 +230,8 @@ proxy-groups:
   - DIRECT
   - United States_None_mieru_01
   - United States_None_mieru_02
+  - United States_None_shadowquic_03
+  - Unknown_shadowquic_04
   - Germany_None_hysteria_11
   - France_None_hysteria_21
   - United States_None_hysteria_31
@@ -229,6 +253,8 @@ proxy-groups:
   proxies:
   - United States_None_mieru_01
   - United States_None_mieru_02
+  - United States_None_shadowquic_03
+  - Unknown_shadowquic_04
   - Germany_None_hysteria_11
   - France_None_hysteria_21
   - United States_None_hysteria_31
