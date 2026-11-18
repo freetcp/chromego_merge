@@ -73,10 +73,10 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_None_hysteria_21
+- name: United States_Los Angeles_hysteria_21
   type: hysteria
-  server: 163.172.117.163
-  port: 36699
+  server: 38.6.222.130
+  port: 11008
   auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
@@ -118,9 +118,9 @@ proxies:
   protocol: udp
   up: 20 Mbps
   down: 20 Mbps
-- name: France_Sarcelles_hysteria_61
+- name: France_None_hysteria_61
   type: hysteria
-  server: 62.210.28.175
+  server: 62.210.124.132
   port: 24667
   auth-str: dongtaiwang.com
   sni: bing.com
@@ -132,8 +132,8 @@ proxies:
   down: 55 Mbps
 - name: France_None_hysteria_71
   type: hysteria
-  server: 163.172.117.163
-  port: 36699
+  server: 62.210.124.132
+  port: 24667
   auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
@@ -233,11 +233,11 @@ proxy-groups:
   - United States_None_shadowquic_03
   - Unknown_shadowquic_04
   - Germany_None_hysteria_11
-  - France_None_hysteria_21
+  - United States_Los Angeles_hysteria_21
   - United States_None_hysteria_31
   - United States_None_mieru_41
   - Taiwan_Shenkeng District_hysteria_51
-  - France_Sarcelles_hysteria_61
+  - France_None_hysteria_61
   - France_None_hysteria_71
   - France_None_hysteria_81
   - France_None_hysteria_91
@@ -256,11 +256,11 @@ proxy-groups:
   - United States_None_shadowquic_03
   - Unknown_shadowquic_04
   - Germany_None_hysteria_11
-  - France_None_hysteria_21
+  - United States_Los Angeles_hysteria_21
   - United States_None_hysteria_31
   - United States_None_mieru_41
   - Taiwan_Shenkeng District_hysteria_51
-  - France_Sarcelles_hysteria_61
+  - France_None_hysteria_61
   - France_None_hysteria_71
   - France_None_hysteria_81
   - France_None_hysteria_91
