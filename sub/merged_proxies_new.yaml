@@ -75,7 +75,7 @@ proxies:
   down: 55 Mbps
 - name: United States_Los Angeles_hysteria_21
   type: hysteria
-  server: 38.6.222.130
+  server: 38.6.222.131
   port: 11008
   auth-str: dongtaiwang.com
   sni: bing.com
@@ -85,11 +85,11 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: United States_None_hysteria_31
+- name: United States_Los Angeles_hysteria_31
   type: hysteria
-  server: 198.200.57.142
-  port: 22335
-  auth-str: github.com/Alvin9999-newpac/fanqiang
+  server: 38.6.222.132
+  port: 11008
+  auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
   alpn:
@@ -168,7 +168,7 @@ proxies:
   down: 55 Mbps
 - name: United States_None_hy_1
   type: hysteria
-  server: 137.175.82.44
+  server: 137.175.82.41
   port: 20022
   ports: 20022
   auth_str: dongtaiwang.com
@@ -234,7 +234,7 @@ proxy-groups:
   - Unknown_shadowquic_04
   - Germany_None_hysteria_11
   - United States_Los Angeles_hysteria_21
-  - United States_None_hysteria_31
+  - United States_Los Angeles_hysteria_31
   - United States_None_mieru_41
   - Taiwan_Shenkeng District_hysteria_51
   - France_None_hysteria_61
@@ -257,7 +257,7 @@ proxy-groups:
   - Unknown_shadowquic_04
   - Germany_None_hysteria_11
   - United States_Los Angeles_hysteria_21
-  - United States_None_hysteria_31
+  - United States_Los Angeles_hysteria_31
   - United States_None_mieru_41
   - Taiwan_Shenkeng District_hysteria_51
   - France_None_hysteria_61
